@@ -60,7 +60,7 @@
         .nav.scrolled { background: rgba(255,255,255,0.97); backdrop-filter: blur(16px); box-shadow: 0 1px 12px rgba(27,20,100,0.05); padding: 8px 0; }
         .nav-inner { display: flex; align-items: center; justify-content: space-between; }
         .nav-logo { display: flex; align-items: center; }
-        .nav-logo img { height: 44px; width: auto; }
+        .nav-logo img { height: 64px; width: auto; }
         .nav-links { display: flex; align-items: center; gap: 28px; }
         .nav-links a { font-size: 0.92rem; font-weight: 500; color: var(--gray-600); transition: color var(--transition); }
         .nav-links a:hover { color: var(--green); }
@@ -135,20 +135,21 @@
         .section-head p { font-size: 1.06rem; color: var(--gray-600); }
 
         /* Why Us */
-        .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
-        .why-img { border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-lg); position: relative; }
-        .why-img img { width: 100%; height: 500px; object-fit: cover; }
-        .why-img-badge { position: absolute; bottom: 20px; left: 20px; background: var(--green); color: var(--white); padding: 10px 20px; border-radius: var(--radius); font-weight: 700; font-size: 0.88rem; }
-        .why-content .section-tag { margin-bottom: 10px; }
-        .why-content h2 { font-size: 2.2rem; margin-bottom: 10px; }
-        .why-content .subtitle { font-size: 1.05rem; color: var(--gray-600); margin-bottom: 32px; font-style: italic; font-family: var(--font-display); }
-        .feat-list { display: flex; flex-direction: column; gap: 20px; }
-        .feat { display: flex; gap: 16px; padding: 20px; border-radius: var(--radius); background: var(--white); border: 1px solid transparent; transition: all var(--transition); }
-        .feat:hover { box-shadow: var(--shadow-md); border-color: var(--green-glow); transform: translateX(4px); }
-        .feat-ico { flex-shrink: 0; width: 48px; height: 48px; background: var(--green-light); border-radius: 12px; display: flex; align-items: center; justify-content: center; }
-        .feat-ico svg { width: 22px; height: 22px; color: var(--green); }
-        .feat h4 { font-size: 0.98rem; margin-bottom: 4px; }
-        .feat p { font-size: 0.9rem; color: var(--gray-600); line-height: 1.65; }
+        .why-intro { text-align: center; max-width: 720px; margin: 0 auto 56px; }
+        .why-intro h2 { font-size: clamp(1.9rem, 3.2vw, 2.6rem); margin-bottom: 16px; }
+        .why-intro .subtitle { font-size: 1.1rem; color: var(--gray-600); font-style: italic; font-family: var(--font-display); margin-bottom: 12px; }
+        .why-intro > p { font-size: 1rem; color: var(--gray-600); line-height: 1.8; }
+        .why-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+        .why-block { background: var(--white); border-radius: var(--radius-lg); padding: 36px 32px; border: 1px solid var(--gray-100); transition: all var(--transition); }
+        .why-block:hover { box-shadow: var(--shadow-lg); border-color: transparent; transform: translateY(-4px); }
+        .why-block-icon { width: 56px; height: 56px; background: var(--green-light); border-radius: 14px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; }
+        .why-block-icon svg { width: 26px; height: 26px; color: var(--green); }
+        .why-block h3 { font-size: 1.25rem; margin-bottom: 16px; }
+        .why-point { display: flex; gap: 12px; margin-bottom: 14px; align-items: flex-start; }
+        .why-point:last-child { margin-bottom: 0; }
+        .why-check { flex-shrink: 0; width: 24px; height: 24px; background: var(--green); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-top: 2px; }
+        .why-check svg { width: 13px; height: 13px; color: var(--white); }
+        .why-point p { font-size: 0.92rem; color: var(--gray-600); line-height: 1.7; }
 
         /* Services */
         .svc-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
@@ -258,7 +259,7 @@
         /* Footer */
         .footer { background: #0B0A2E; color: rgba(255,255,255,0.6); padding: 60px 0 0; }
         .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 36px; padding-bottom: 44px; border-bottom: 1px solid rgba(255,255,255,0.06); }
-        .footer-brand img { height: 36px; margin-bottom: 16px; filter: brightness(10); }
+        .footer-brand img { height: 48px; margin-bottom: 16px; filter: brightness(10); }
         .footer-brand p { font-size: 0.88rem; line-height: 1.7; margin-bottom: 20px; max-width: 260px; }
         .footer-social { display: flex; gap: 10px; }
         .footer-social a { width: 40px; height: 40px; background: rgba(255,255,255,0.05); border-radius: 10px; display: flex; align-items: center; justify-content: center; transition: all var(--transition); }
@@ -290,8 +291,7 @@
             .hero-float-1 { left: 0; bottom: -10px; }
             .hero-float-2 { right: 0; top: 16px; }
             .trust-grid { grid-template-columns: repeat(2, 1fr); }
-            .why-grid { grid-template-columns: 1fr; gap: 36px; }
-            .why-img img { height: 360px; }
+            .why-cols { grid-template-columns: 1fr; gap: 28px; }
             .proc-grid { grid-template-columns: repeat(2, 1fr); gap: 36px; }
             .proc::after { display: none; }
             .contact-grid { grid-template-columns: 1fr; }
@@ -389,17 +389,27 @@
 </section>
 
 <section class="section section-gray" id="why">
-    <div class="container why-grid">
-        <div class="why-img reveal"><img src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?w=700&q=80" alt="Eco-friendly cleaning products" loading="lazy"><div class="why-img-badge">Eco Certified</div></div>
-        <div class="why-content">
-            <div class="section-tag reveal">Why Choose Us</div>
-            <h2 class="reveal reveal-d1">Why Infinium Services?</h2>
-            <p class="subtitle reveal reveal-d1">Not Your Average House Cleaning</p>
-            <div class="feat-list">
-                <div class="feat reveal reveal-d1"><div class="feat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c4-4 8-7.5 8-12a8 8 0 1 0-16 0c0 4.5 4 8 8 12z"/><circle cx="12" cy="10" r="3"/></svg></div><div><h4>Eco, Health Canada-Approved Products</h4><p>Bleach-free, hospital-grade yet gentle formulas safe for children, pets, and sensitive individuals.</p></div></div>
-                <div class="feat reveal reveal-d2"><div class="feat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg></div><div><h4>HEPA Vacuum Systems</h4><p>Medical-grade HEPA filtration captures 99.97% of allergens, dust mites, and airborne particles.</p></div></div>
-                <div class="feat reveal reveal-d3"><div class="feat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div><div><h4>High-Touch Disinfection Protocol</h4><p>Doorknobs, switches, handles, remotes — every high-touch surface gets targeted treatment.</p></div></div>
-                <div class="feat reveal reveal-d4"><div class="feat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 15l2 2 4-4"/></svg></div><div><h4>Audit & Checklist Verification</h4><p>Every clean follows a strict checklist, verified and documented so nothing is ever missed.</p></div></div>
+    <div class="container">
+        <div class="why-intro reveal">
+            <div class="section-tag">Why Choose MedEco</div>
+            <h2>Not All Cleaning Is Created Equal</h2>
+            <p class="subtitle">Designed by Medical Professionals</p>
+            <p>MedEco was designed by medical professionals who understand that standard cleaning methods can actually spread germs rather than eliminate them.</p>
+        </div>
+        <div class="why-cols">
+            <div class="why-block reveal">
+                <div class="why-block-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div>
+                <h3>How Standard Cleaning Can Spread Germs</h3>
+                <div class="why-point"><div class="why-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></div><p>Most conventional cleaning services use the same cloths across multiple rooms, transferring bacteria from bathrooms to kitchens and living areas.</p></div>
+                <div class="why-point"><div class="why-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></div><p>Standard vacuum cleaners lack adequate filtration, recirculating fine dust and allergens back into your air.</p></div>
+                <div class="why-point"><div class="why-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></div><p>Without proper protocols, incorrect chemical usage can leave surfaces inadequately sanitised — or worse, create harmful residues.</p></div>
+            </div>
+            <div class="why-block reveal reveal-d1">
+                <div class="why-block-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+                <h3>Designed by Medical Professionals</h3>
+                <div class="why-point"><div class="why-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></div><p>MedEco is designed and managed by medical professionals with infection-control expertise. We apply hospital-level hygiene awareness to residential cleaning.</p></div>
+                <div class="why-point"><div class="why-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></div><p>Every member of our team is trained in cross-contamination prevention — bathroom tools never touch kitchen surfaces.</p></div>
+                <div class="why-point"><div class="why-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></div><p>We use only eco-friendly, Health Canada-approved disinfectants that are bleach-free, low-fume, and safe for children, pets, seniors, and allergy sufferers.</p></div>
             </div>
         </div>
     </div>
