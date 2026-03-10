@@ -4,838 +4,535 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Infinium Services | Premium Residential Cleaning — Toronto & GTA</title>
-    <meta name="description" content="Infinium Services provides medical-grade eco cleaning for healthier homes in the Greater Toronto Area. Hospital-level care with eco-friendly products.">
+    <meta name="description" content="Infinium Services provides premium eco-friendly residential cleaning for healthier homes in the Greater Toronto Area.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary: #2563EB;
-            --primary-deep: #1D4ED8;
-            --primary-dark: #1E3A5F;
-            --primary-light: #EFF6FF;
-            --primary-glow: rgba(37, 99, 235, 0.12);
-            --navy: #0F172A;
-            --navy-light: #334155;
-            --gold: #D4A853;
-            --gold-light: #FEF9EF;
-            --gold-glow: rgba(212, 168, 83, 0.15);
-            --accent: #0EA5E9;
+            --navy: #1B1464;
+            --navy-dark: #110E42;
+            --navy-light: #2E2880;
+            --green: #4B9E2F;
+            --green-dark: #3D8226;
+            --green-light: #E9F5E3;
+            --green-glow: rgba(75, 158, 47, 0.12);
             --white: #FFFFFF;
             --off-white: #FAFBFC;
-            --gray-50: #F8FAFC;
-            --gray-100: #F1F5F9;
-            --gray-200: #E2E8F0;
-            --gray-400: #94A3B8;
-            --gray-600: #475569;
-            --font-display: 'Playfair Display', Georgia, serif;
-            --font-body: 'Plus Jakarta Sans', -apple-system, sans-serif;
-            --shadow-sm: 0 2px 8px rgba(15, 23, 42, 0.05);
-            --shadow-md: 0 8px 30px rgba(15, 23, 42, 0.07);
-            --shadow-lg: 0 20px 60px rgba(15, 23, 42, 0.09);
-            --shadow-primary: 0 8px 30px rgba(37, 99, 235, 0.18);
-            --shadow-gold: 0 8px 30px rgba(212, 168, 83, 0.2);
-            --radius-sm: 8px;
-            --radius-md: 14px;
+            --gray-50: #F8F9FB;
+            --gray-100: #F1F3F7;
+            --gray-200: #E2E6ED;
+            --gray-300: #CDD3DE;
+            --gray-400: #9CA3B5;
+            --gray-600: #4F5668;
+            --gray-800: #2B3040;
+            --font-display: 'DM Serif Display', Georgia, serif;
+            --font-body: 'DM Sans', -apple-system, sans-serif;
+            --shadow-sm: 0 1px 4px rgba(27, 20, 100, 0.04);
+            --shadow-md: 0 6px 24px rgba(27, 20, 100, 0.06);
+            --shadow-lg: 0 16px 48px rgba(27, 20, 100, 0.08);
+            --shadow-green: 0 6px 24px rgba(75, 158, 47, 0.18);
+            --radius: 12px;
             --radius-lg: 20px;
-            --radius-xl: 28px;
-            --transition: 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            --transition: 0.3s ease;
         }
 
         *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
         html { scroll-behavior: smooth; font-size: 16px; -webkit-font-smoothing: antialiased; }
-        body { font-family: var(--font-body); color: var(--navy); background: var(--white); line-height: 1.7; overflow-x: hidden; }
-        h1, h2, h3, h4, h5 { font-family: var(--font-display); line-height: 1.2; font-weight: 600; }
+        body { font-family: var(--font-body); color: var(--gray-800); background: var(--white); line-height: 1.75; overflow-x: hidden; }
+        h1, h2, h3 { font-family: var(--font-display); line-height: 1.25; font-weight: 400; color: var(--navy); }
+        h4, h5 { font-family: var(--font-body); font-weight: 700; color: var(--navy); }
         a { text-decoration: none; color: inherit; }
         img { max-width: 100%; height: auto; display: block; }
         button { cursor: pointer; border: none; font-family: var(--font-body); }
         ul { list-style: none; }
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+        .container { max-width: 1140px; margin: 0 auto; padding: 0 28px; }
 
-        body::before {
-            content: '';
-            position: fixed;
-            inset: 0;
-            pointer-events: none;
-            z-index: 9999;
-            opacity: 0.015;
-            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
-        }
-
-        .reveal { opacity: 0; transform: translateY(40px); transition: opacity 0.8s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.8s cubic-bezier(0.25,0.46,0.45,0.94); }
+        .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
         .reveal.visible { opacity: 1; transform: translateY(0); }
-        .reveal-delay-1 { transition-delay: 0.1s; }
-        .reveal-delay-2 { transition-delay: 0.2s; }
-        .reveal-delay-3 { transition-delay: 0.3s; }
-        .reveal-delay-4 { transition-delay: 0.4s; }
+        .reveal-d1 { transition-delay: 0.1s; }
+        .reveal-d2 { transition-delay: 0.2s; }
+        .reveal-d3 { transition-delay: 0.3s; }
+        .reveal-d4 { transition-delay: 0.4s; }
 
         /* ===== NAV ===== */
-        .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; padding: 16px 0; transition: all var(--transition); background: transparent; }
-        .nav.scrolled { background: rgba(255,255,255,0.96); backdrop-filter: blur(20px); box-shadow: 0 2px 20px rgba(15,23,42,0.05); padding: 10px 0; }
+        .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; padding: 14px 0; transition: all var(--transition); background: rgba(255,255,255,0.0); }
+        .nav.scrolled { background: rgba(255,255,255,0.97); backdrop-filter: blur(16px); box-shadow: 0 1px 12px rgba(27,20,100,0.05); padding: 8px 0; }
         .nav-inner { display: flex; align-items: center; justify-content: space-between; }
-        .nav-logo { display: flex; align-items: center; gap: 10px; }
-        .nav-logo-icon { width: 40px; height: 40px; background: linear-gradient(135deg, var(--primary), var(--primary-deep)); border-radius: 10px; display: flex; align-items: center; justify-content: center; transition: transform var(--transition); }
-        .nav-logo:hover .nav-logo-icon { transform: rotate(-8deg) scale(1.05); }
-        .nav-logo-icon svg { width: 22px; height: 22px; }
-        .nav-logo-text { font-family: var(--font-display); font-size: 1.25rem; font-weight: 700; color: var(--navy); }
-        .nav-logo-text span { color: var(--primary); }
-
+        .nav-logo { display: flex; align-items: center; }
+        .nav-logo img { height: 44px; width: auto; }
         .nav-links { display: flex; align-items: center; gap: 28px; }
-        .nav-links a { font-size: 0.88rem; font-weight: 500; color: var(--navy-light); position: relative; transition: color var(--transition); }
-        .nav-links a::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px; background: var(--primary); border-radius: 2px; transition: width var(--transition); }
-        .nav-links a:hover { color: var(--primary); }
-        .nav-links a:hover::after { width: 100%; }
+        .nav-links a { font-size: 0.92rem; font-weight: 500; color: var(--gray-600); transition: color var(--transition); }
+        .nav-links a:hover { color: var(--green); }
+        .nav-phone { display: inline-flex; align-items: center; gap: 6px; font-size: 0.92rem; font-weight: 600; color: var(--navy); transition: color var(--transition); }
+        .nav-phone:hover { color: var(--green); }
+        .nav-phone svg { width: 16px; height: 16px; color: var(--green); }
+        .nav-cta { display: inline-flex; align-items: center; gap: 8px; background: var(--green); color: var(--white); padding: 10px 24px; border-radius: 50px; font-weight: 600; font-size: 0.88rem; transition: all var(--transition); box-shadow: var(--shadow-green); }
+        .nav-cta:hover { background: var(--green-dark); transform: translateY(-1px); }
 
-        .nav-phone { display: inline-flex; align-items: center; gap: 6px; font-size: 0.88rem; font-weight: 600; color: var(--navy); transition: color var(--transition); }
-        .nav-phone:hover { color: var(--primary); }
-        .nav-phone::after { display: none !important; }
-        .nav-phone svg { width: 16px; height: 16px; color: var(--primary); }
-
-        .nav-cta { display: inline-flex; align-items: center; gap: 8px; background: linear-gradient(135deg, var(--primary), var(--primary-deep)); color: var(--white) !important; padding: 10px 24px; border-radius: 50px; font-weight: 600; font-size: 0.88rem; transition: all var(--transition); box-shadow: var(--shadow-primary); }
-        .nav-cta::after { display: none !important; }
-        .nav-cta:hover { background: linear-gradient(135deg, var(--primary-deep), #1e40af); transform: translateY(-2px); box-shadow: 0 12px 35px rgba(37,99,235,0.25); color: var(--white) !important; }
-        .nav-cta svg { width: 16px; height: 16px; }
-
-        .nav-hamburger { display: none; flex-direction: column; gap: 5px; background: none; padding: 8px; z-index: 1001; }
-        .nav-hamburger span { display: block; width: 24px; height: 2.5px; background: var(--navy); border-radius: 3px; transition: all 0.3s ease; }
-        .nav-hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+        .nav-hamburger { display: none; flex-direction: column; gap: 5px; background: none; padding: 8px; }
+        .nav-hamburger span { display: block; width: 24px; height: 2px; background: var(--navy); border-radius: 2px; transition: all 0.3s; }
+        .nav-hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px,5px); }
         .nav-hamburger.active span:nth-child(2) { opacity: 0; }
-        .nav-hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(6px, -6px); }
-
-        .nav-mobile { display: none; position: fixed; inset: 0; background: rgba(255,255,255,0.98); backdrop-filter: blur(20px); z-index: 999; flex-direction: column; align-items: center; justify-content: center; gap: 28px; }
+        .nav-hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px,-5px); }
+        .nav-mobile { display: none; position: fixed; inset: 0; background: rgba(255,255,255,0.98); backdrop-filter: blur(16px); z-index: 999; flex-direction: column; align-items: center; justify-content: center; gap: 24px; }
         .nav-mobile.open { display: flex; }
-        .nav-mobile a { font-family: var(--font-display); font-size: 1.5rem; font-weight: 500; color: var(--navy); transition: color var(--transition); }
-        .nav-mobile a:hover { color: var(--primary); }
+        .nav-mobile a { font-family: var(--font-display); font-size: 1.4rem; color: var(--navy); }
+        .nav-mobile a:hover { color: var(--green); }
 
         /* ===== HERO ===== */
-        .hero { position: relative; min-height: 100vh; display: flex; align-items: center; overflow: hidden; background: linear-gradient(135deg, #f8faff 0%, #eff6ff 30%, #f0f9ff 70%, #fefce8 100%); }
-        .hero::before { content: ''; position: absolute; top: -20%; right: -10%; width: 700px; height: 700px; background: radial-gradient(circle, rgba(37,99,235,0.06) 0%, transparent 70%); border-radius: 50%; pointer-events: none; }
-        .hero::after { content: ''; position: absolute; bottom: -10%; left: -5%; width: 500px; height: 500px; background: radial-gradient(circle, rgba(212,168,83,0.06) 0%, transparent 70%); border-radius: 50%; pointer-events: none; }
+        .hero { position: relative; padding: 140px 0 80px; background: linear-gradient(170deg, #FFFFFF 0%, #F4F6FB 40%, var(--green-light) 100%); overflow: hidden; }
+        .hero::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 120px; background: linear-gradient(180deg, transparent, var(--white)); pointer-events: none; }
+        .hero-inner { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 56px; align-items: center; }
+        .hero-content { position: relative; z-index: 2; }
+        .hero-badge { display: inline-flex; align-items: center; gap: 8px; background: var(--white); border: 1px solid var(--gray-200); padding: 8px 18px; border-radius: 50px; font-size: 0.84rem; font-weight: 600; color: var(--green); margin-bottom: 28px; box-shadow: var(--shadow-sm); }
+        .hero-badge-dot { width: 8px; height: 8px; background: var(--green); border-radius: 50%; animation: pulse 2s ease-in-out infinite; }
+        @keyframes pulse { 0%,100% { opacity:1; transform:scale(1); } 50% { opacity:.5; transform:scale(1.3); } }
 
-        .hero-deco { position: absolute; pointer-events: none; opacity: 0.06; }
-        .hero-deco-1 { top: 15%; right: 8%; width: 120px; height: 120px; animation: float 8s ease-in-out infinite; }
-        .hero-deco-2 { bottom: 20%; left: 5%; width: 80px; height: 80px; animation: float 6s ease-in-out infinite reverse; }
-        .hero-deco-3 { top: 60%; right: 25%; width: 60px; height: 60px; animation: float 10s ease-in-out infinite 2s; }
-        @keyframes float { 0%, 100% { transform: translateY(0) rotate(0deg); } 50% { transform: translateY(-20px) rotate(5deg); } }
+        .hero h1 { font-size: clamp(2.6rem, 4.5vw, 3.8rem); color: var(--navy); margin-bottom: 24px; letter-spacing: -0.01em; }
+        .hero h1 em { color: var(--green); font-style: italic; }
+        .hero-text { font-size: 1.12rem; line-height: 1.85; color: var(--gray-600); margin-bottom: 36px; max-width: 500px; }
+        .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 16px; }
 
-        .hero-inner { position: relative; z-index: 2; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; padding: 120px 0 80px; }
-        .hero-content { max-width: 580px; }
-        .hero-badge { display: inline-flex; align-items: center; gap: 8px; background: var(--white); border: 1px solid var(--primary-glow); padding: 8px 18px; border-radius: 50px; font-size: 0.82rem; font-weight: 600; color: var(--primary); margin-bottom: 28px; box-shadow: var(--shadow-sm); }
-        .hero-badge-dot { width: 8px; height: 8px; background: var(--primary); border-radius: 50%; animation: pulse-dot 2s ease-in-out infinite; }
-        @keyframes pulse-dot { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.5; transform: scale(1.3); } }
+        .btn { display: inline-flex; align-items: center; gap: 10px; padding: 15px 32px; border-radius: 50px; font-weight: 600; font-size: 1rem; transition: all var(--transition); }
+        .btn-green { background: var(--green); color: var(--white); box-shadow: var(--shadow-green); }
+        .btn-green:hover { background: var(--green-dark); transform: translateY(-2px); box-shadow: 0 10px 30px rgba(75,158,47,0.25); }
+        .btn-wa { background: #25D366; color: var(--white); box-shadow: 0 6px 24px rgba(37,211,102,0.18); }
+        .btn-wa:hover { background: #20BD5A; transform: translateY(-2px); }
+        .btn-outline { background: var(--white); color: var(--navy); border: 2px solid var(--gray-200); }
+        .btn-outline:hover { border-color: var(--green); color: var(--green); transform: translateY(-2px); box-shadow: var(--shadow-md); }
+        .btn svg { width: 18px; height: 18px; flex-shrink: 0; }
 
-        .hero h1 { font-size: clamp(2.4rem, 4.5vw, 3.6rem); font-weight: 700; color: var(--navy); margin-bottom: 24px; letter-spacing: -0.02em; }
-        .hero h1 em { font-style: italic; color: var(--primary); position: relative; }
-        .hero h1 em::after { content: ''; position: absolute; bottom: 4px; left: 0; right: 0; height: 8px; background: var(--primary-glow); border-radius: 4px; z-index: -1; }
-        .hero-text { font-size: 1.08rem; line-height: 1.8; color: var(--gray-600); margin-bottom: 36px; max-width: 480px; }
-        .hero-buttons { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 20px; }
+        .hero-visual { position: relative; }
+        .hero-img { border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-lg); }
+        .hero-img img { width: 100%; height: 480px; object-fit: cover; }
+        .hero-float { position: absolute; background: var(--white); padding: 16px 22px; border-radius: var(--radius); box-shadow: var(--shadow-lg); display: flex; align-items: center; gap: 12px; animation: float 6s ease-in-out infinite; }
+        @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-14px); } }
+        .hero-float-1 { bottom: -16px; left: -24px; }
+        .hero-float-2 { top: 24px; right: -16px; }
+        .hero-float-icon { width: 44px; height: 44px; background: var(--green-light); border-radius: 10px; display: flex; align-items: center; justify-content: center; }
+        .hero-float-icon svg { width: 22px; height: 22px; color: var(--green); }
+        .hero-float strong { font-family: var(--font-display); font-size: 1.2rem; color: var(--navy); display: block; }
+        .hero-float span { font-size: 0.78rem; color: var(--gray-400); }
+        .hero-float .stars { color: #F59E0B; font-size: 0.92rem; letter-spacing: 1px; }
 
-        .btn-primary { display: inline-flex; align-items: center; gap: 10px; background: linear-gradient(135deg, var(--primary), var(--primary-deep)); color: var(--white); padding: 16px 34px; border-radius: 50px; font-weight: 600; font-size: 1rem; transition: all var(--transition); box-shadow: var(--shadow-primary); }
-        .btn-primary:hover { background: linear-gradient(135deg, var(--primary-deep), #1e40af); transform: translateY(-3px); box-shadow: 0 14px 40px rgba(37,99,235,0.28); }
-        .btn-whatsapp { display: inline-flex; align-items: center; gap: 10px; background: #25D366; color: var(--white); padding: 16px 34px; border-radius: 50px; font-weight: 600; font-size: 1rem; transition: all var(--transition); box-shadow: 0 8px 30px rgba(37,211,102,0.2); }
-        .btn-whatsapp:hover { background: #20BD5A; transform: translateY(-3px); box-shadow: 0 14px 40px rgba(37,211,102,0.3); }
-        .btn-outline { display: inline-flex; align-items: center; gap: 10px; background: transparent; color: var(--navy); padding: 16px 34px; border-radius: 50px; font-weight: 600; font-size: 1rem; border: 2px solid var(--gray-200); transition: all var(--transition); }
-        .btn-outline:hover { border-color: var(--primary); color: var(--primary); transform: translateY(-3px); box-shadow: var(--shadow-md); }
-        .btn-call { display: inline-flex; align-items: center; gap: 10px; background: var(--white); color: var(--navy); padding: 16px 34px; border-radius: 50px; font-weight: 600; font-size: 1rem; border: 2px solid var(--gray-200); transition: all var(--transition); }
-        .btn-call:hover { border-color: var(--primary); color: var(--primary); transform: translateY(-3px); box-shadow: var(--shadow-md); }
+        /* Trust strip */
+        .trust { padding: 60px 0 80px; position: relative; z-index: 3; }
+        .trust-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+        .trust-card { background: var(--white); border: 1px solid var(--gray-100); border-radius: var(--radius); padding: 24px 20px; display: flex; align-items: center; gap: 14px; transition: all var(--transition); box-shadow: var(--shadow-sm); }
+        .trust-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border-color: var(--green-glow); }
+        .trust-icon { flex-shrink: 0; width: 48px; height: 48px; background: var(--green-light); border-radius: 12px; display: flex; align-items: center; justify-content: center; }
+        .trust-icon svg { width: 22px; height: 22px; color: var(--green); }
+        .trust-text { font-weight: 600; font-size: 0.92rem; color: var(--navy); line-height: 1.4; }
 
-        .hero-visual { position: relative; display: flex; justify-content: center; }
-        .hero-image-wrapper { position: relative; border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-lg); max-width: 480px; width: 100%; }
-        .hero-image-wrapper img { width: 100%; height: 520px; object-fit: cover; }
-        .hero-image-wrapper::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 60%, rgba(37,99,235,0.06) 100%); pointer-events: none; }
+        /* Section */
+        .section { padding: 90px 0; }
+        .section-gray { background: var(--gray-50); }
+        .section-green { background: linear-gradient(170deg, var(--white) 0%, var(--green-light) 100%); }
+        .section-head { text-align: center; max-width: 620px; margin: 0 auto 56px; }
+        .section-tag { display: inline-block; font-size: 0.82rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.14em; color: var(--green); margin-bottom: 14px; }
+        .section-head h2 { font-size: clamp(1.9rem, 3.2vw, 2.6rem); margin-bottom: 16px; }
+        .section-head p { font-size: 1.06rem; color: var(--gray-600); }
 
-        .hero-float-card { position: absolute; bottom: -20px; left: -30px; background: var(--white); padding: 18px 24px; border-radius: var(--radius-md); box-shadow: var(--shadow-lg); display: flex; align-items: center; gap: 14px; animation: float 6s ease-in-out infinite; }
-        .hero-float-card-icon { width: 48px; height: 48px; background: var(--primary-light); border-radius: 12px; display: flex; align-items: center; justify-content: center; }
-        .hero-float-card-icon svg { width: 24px; height: 24px; color: var(--primary); }
-        .hero-float-card-text strong { display: block; font-size: 1.3rem; font-family: var(--font-display); color: var(--navy); }
-        .hero-float-card-text span { font-size: 0.8rem; color: var(--gray-400); }
+        /* Why Us */
+        .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
+        .why-img { border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-lg); position: relative; }
+        .why-img img { width: 100%; height: 500px; object-fit: cover; }
+        .why-img-badge { position: absolute; bottom: 20px; left: 20px; background: var(--green); color: var(--white); padding: 10px 20px; border-radius: var(--radius); font-weight: 700; font-size: 0.88rem; }
+        .why-content .section-tag { margin-bottom: 10px; }
+        .why-content h2 { font-size: 2.2rem; margin-bottom: 10px; }
+        .why-content .subtitle { font-size: 1.05rem; color: var(--gray-600); margin-bottom: 32px; font-style: italic; font-family: var(--font-display); }
+        .feat-list { display: flex; flex-direction: column; gap: 20px; }
+        .feat { display: flex; gap: 16px; padding: 20px; border-radius: var(--radius); background: var(--white); border: 1px solid transparent; transition: all var(--transition); }
+        .feat:hover { box-shadow: var(--shadow-md); border-color: var(--green-glow); transform: translateX(4px); }
+        .feat-ico { flex-shrink: 0; width: 48px; height: 48px; background: var(--green-light); border-radius: 12px; display: flex; align-items: center; justify-content: center; }
+        .feat-ico svg { width: 22px; height: 22px; color: var(--green); }
+        .feat h4 { font-size: 0.98rem; margin-bottom: 4px; }
+        .feat p { font-size: 0.9rem; color: var(--gray-600); line-height: 1.65; }
 
-        .hero-float-card-2 { position: absolute; top: 30px; right: -20px; background: var(--white); padding: 14px 20px; border-radius: var(--radius-md); box-shadow: var(--shadow-lg); display: flex; align-items: center; gap: 10px; animation: float 7s ease-in-out infinite 1s; }
-        .hero-float-card-2 .stars { color: var(--gold); font-size: 1rem; letter-spacing: 2px; }
-        .hero-float-card-2 span { font-size: 0.82rem; font-weight: 600; color: var(--navy); }
+        /* Services */
+        .svc-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+        .svc { background: var(--white); border-radius: var(--radius-lg); padding: 36px 30px; border: 1px solid var(--gray-100); transition: all var(--transition); position: relative; overflow: hidden; }
+        .svc::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, var(--green), var(--navy)); transform: scaleX(0); transform-origin: left; transition: transform var(--transition); }
+        .svc:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); border-color: transparent; }
+        .svc:hover::before { transform: scaleX(1); }
+        .svc-ico { width: 56px; height: 56px; background: var(--green-light); border-radius: 14px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; transition: background var(--transition); }
+        .svc:hover .svc-ico { background: var(--green); }
+        .svc-ico svg { width: 26px; height: 26px; color: var(--green); transition: color var(--transition); }
+        .svc:hover .svc-ico svg { color: var(--white); }
+        .svc h3 { font-size: 1.2rem; margin-bottom: 10px; }
+        .svc p { font-size: 0.94rem; color: var(--gray-600); line-height: 1.7; margin-bottom: 18px; }
+        .svc-link { display: inline-flex; align-items: center; gap: 6px; font-weight: 600; font-size: 0.88rem; color: var(--green); transition: gap var(--transition); }
+        .svc:hover .svc-link { gap: 12px; }
+        .svc-link svg { width: 16px; height: 16px; }
 
-        /* Trust badges */
-        .trust-strip { position: relative; z-index: 3; margin-top: -40px; padding-bottom: 60px; }
-        .trust-strip-inner { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
-        .trust-badge { background: var(--white); border: 1px solid rgba(37,99,235,0.08); border-radius: var(--radius-md); padding: 24px 20px; display: flex; align-items: center; gap: 16px; transition: all var(--transition); box-shadow: var(--shadow-sm); }
-        .trust-badge:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: rgba(37,99,235,0.18); }
-        .trust-badge-icon { flex-shrink: 0; width: 50px; height: 50px; background: var(--primary-light); border-radius: 12px; display: flex; align-items: center; justify-content: center; }
-        .trust-badge-icon svg { width: 24px; height: 24px; color: var(--primary); }
-        .trust-badge-text { font-weight: 600; font-size: 0.9rem; color: var(--navy); line-height: 1.4; }
+        /* Process */
+        .proc-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px; text-align: center; }
+        .proc { position: relative; }
+        .proc-num { width: 52px; height: 52px; background: var(--navy); color: var(--white); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-size: 1.2rem; margin: 0 auto 16px; }
+        .proc h4 { font-size: 1rem; margin-bottom: 8px; }
+        .proc p { font-size: 0.88rem; color: var(--gray-600); line-height: 1.6; }
+        .proc::after { content: ''; position: absolute; top: 26px; left: 72%; width: 56%; height: 2px; background: var(--gray-200); }
+        .proc:last-child::after { display: none; }
 
-        /* Sections */
-        .section { padding: 100px 0; }
-        .section-alt { background: var(--gray-50); }
-        .section-blue { background: linear-gradient(135deg, #f8faff 0%, var(--primary-light) 100%); }
-        .section-header { text-align: center; max-width: 640px; margin: 0 auto 60px; }
-        .section-label { display: inline-flex; align-items: center; gap: 8px; font-size: 0.82rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: var(--primary); margin-bottom: 16px; }
-        .section-label::before, .section-label::after { content: ''; width: 24px; height: 2px; background: var(--primary); border-radius: 2px; opacity: 0.4; }
-        .section-header h2 { font-size: clamp(2rem, 3.5vw, 2.8rem); color: var(--navy); margin-bottom: 18px; }
-        .section-header p { font-size: 1.05rem; color: var(--gray-600); line-height: 1.8; }
+        /* Pricing */
+        .price-wrap { max-width: 860px; margin: 0 auto; }
+        .price-tbl { background: var(--white); border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-lg); border: 1px solid var(--gray-100); }
+        .price-row { display: grid; grid-template-columns: 1.2fr 1fr 1fr; align-items: center; }
+        .price-row:not(.price-head):hover { background: var(--green-light); }
+        .price-row:not(:last-child) { border-bottom: 1px solid var(--gray-100); }
+        .price-head { background: var(--navy); }
+        .price-cell { padding: 20px 28px; font-size: 0.94rem; }
+        .price-head .price-cell { color: var(--white); font-weight: 600; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.08em; }
+        .price-cell:nth-child(2), .price-cell:nth-child(3) { text-align: center; }
+        .price-cell .amt { font-family: var(--font-display); font-size: 1.2rem; color: var(--navy); }
+        .price-cell .type { font-weight: 600; color: var(--navy); }
+        .price-cell .inc { font-size: 0.8rem; color: var(--gray-400); }
+        .price-row.pop { background: var(--green-light); position: relative; }
+        .pop-tag { position: absolute; top: 10px; right: 14px; background: var(--green); color: var(--white); font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; padding: 3px 10px; border-radius: 50px; }
+        .price-note { text-align: center; margin-top: 24px; font-size: 0.9rem; color: var(--gray-600); font-style: italic; }
+        .price-cta { text-align: center; margin-top: 32px; display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
 
-        /* ===== WHY MEDECO ===== */
-        .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
-        .why-image { position: relative; border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-lg); }
-        .why-image img { width: 100%; height: 550px; object-fit: cover; }
-        .why-image-badge { position: absolute; bottom: 24px; left: 24px; background: var(--primary); color: var(--white); padding: 12px 22px; border-radius: var(--radius-md); font-weight: 700; font-size: 0.9rem; box-shadow: var(--shadow-primary); }
-        .why-content .section-label { margin-bottom: 12px; }
-        .why-content h2 { font-size: 2.4rem; margin-bottom: 12px; }
-        .why-content .subtitle { font-size: 1.1rem; color: var(--gray-600); margin-bottom: 36px; font-style: italic; font-family: var(--font-display); }
+        /* FAQ */
+        .faq-wrap { max-width: 740px; margin: 0 auto; }
+        .faq-item { background: var(--white); border-radius: var(--radius); margin-bottom: 12px; border: 1px solid var(--gray-100); overflow: hidden; transition: all var(--transition); }
+        .faq-item:hover, .faq-item.active { box-shadow: var(--shadow-sm); border-color: rgba(75,158,47,0.15); }
+        .faq-q { display: flex; align-items: center; justify-content: space-between; width: 100%; background: none; padding: 20px 24px; font-size: 1rem; font-weight: 600; color: var(--navy); text-align: left; transition: color var(--transition); }
+        .faq-item.active .faq-q { color: var(--green); }
+        .faq-plus { flex-shrink: 0; width: 30px; height: 30px; background: var(--green-light); border-radius: 8px; display: flex; align-items: center; justify-content: center; transition: all var(--transition); }
+        .faq-item.active .faq-plus { background: var(--green); transform: rotate(45deg); }
+        .faq-plus svg { width: 14px; height: 14px; color: var(--green); transition: color var(--transition); }
+        .faq-item.active .faq-plus svg { color: var(--white); }
+        .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
+        .faq-item.active .faq-a { max-height: 300px; }
+        .faq-a-inner { padding: 0 24px 20px; font-size: 0.94rem; color: var(--gray-600); line-height: 1.8; }
 
-        .feature-list { display: flex; flex-direction: column; gap: 24px; }
-        .feature-item { display: flex; gap: 18px; padding: 22px; border-radius: var(--radius-md); transition: all var(--transition); background: var(--white); border: 1px solid transparent; }
-        .feature-item:hover { box-shadow: var(--shadow-md); border-color: rgba(37,99,235,0.1); transform: translateX(6px); }
-        .feature-icon { flex-shrink: 0; width: 52px; height: 52px; background: var(--primary-light); border-radius: 14px; display: flex; align-items: center; justify-content: center; }
-        .feature-icon svg { width: 24px; height: 24px; color: var(--primary); }
-        .feature-item h4 { font-family: var(--font-body); font-weight: 700; font-size: 1rem; margin-bottom: 6px; color: var(--navy); }
-        .feature-item p { font-size: 0.9rem; color: var(--gray-600); line-height: 1.6; }
+        /* CTA banner */
+        .cta { background: var(--navy); padding: 64px 0; text-align: center; position: relative; overflow: hidden; }
+        .cta::before { content: ''; position: absolute; top: -40%; right: -15%; width: 500px; height: 500px; background: radial-gradient(circle, rgba(75,158,47,0.1) 0%, transparent 70%); border-radius: 50%; }
+        .cta h2 { font-size: 2rem; color: var(--white); margin-bottom: 14px; position: relative; z-index: 2; }
+        .cta p { color: rgba(255,255,255,0.65); font-size: 1.02rem; margin-bottom: 28px; position: relative; z-index: 2; }
+        .cta .btn-row { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; position: relative; z-index: 2; }
 
-        /* ===== SERVICES ===== */
-        .services-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px; }
-        .service-card { position: relative; background: var(--white); border-radius: var(--radius-lg); padding: 40px 32px; transition: all var(--transition); border: 1px solid var(--gray-100); overflow: hidden; }
-        .service-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, var(--primary), var(--accent)); transform: scaleX(0); transform-origin: left; transition: transform var(--transition); }
-        .service-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); border-color: transparent; }
-        .service-card:hover::before { transform: scaleX(1); }
-        .service-card-icon { width: 64px; height: 64px; background: var(--primary-light); border-radius: 18px; display: flex; align-items: center; justify-content: center; margin-bottom: 24px; transition: all var(--transition); }
-        .service-card:hover .service-card-icon { background: var(--primary); }
-        .service-card-icon svg { width: 28px; height: 28px; color: var(--primary); transition: color var(--transition); }
-        .service-card:hover .service-card-icon svg { color: var(--white); }
-        .service-card h3 { font-size: 1.3rem; margin-bottom: 12px; color: var(--navy); }
-        .service-card p { font-size: 0.95rem; color: var(--gray-600); line-height: 1.7; margin-bottom: 20px; }
-        .service-card-link { display: inline-flex; align-items: center; gap: 8px; font-weight: 600; font-size: 0.9rem; color: var(--primary); transition: gap var(--transition); }
-        .service-card:hover .service-card-link { gap: 14px; }
-        .service-card-link svg { width: 16px; height: 16px; }
+        /* Contact */
+        .contact { background: linear-gradient(170deg, var(--navy-dark) 0%, var(--navy) 60%, var(--navy-light) 100%); color: var(--white); position: relative; overflow: hidden; }
+        .contact::before { content: ''; position: absolute; top: -40%; right: -15%; width: 500px; height: 500px; background: radial-gradient(circle, rgba(75,158,47,0.08) 0%, transparent 70%); border-radius: 50%; pointer-events: none; }
+        .contact .section-head h2 { color: var(--white); }
+        .contact .section-head p { color: rgba(255,255,255,0.6); }
+        .contact .section-tag { color: var(--green); }
+        .contact-grid { display: grid; grid-template-columns: 1fr 1.3fr; gap: 56px; align-items: start; }
+        .contact-info h3 { font-size: 1.5rem; color: var(--white); margin-bottom: 16px; }
+        .contact-info > p { color: rgba(255,255,255,0.6); line-height: 1.8; margin-bottom: 32px; }
+        .c-detail { display: flex; align-items: center; gap: 14px; margin-bottom: 18px; }
+        .c-ico { width: 44px; height: 44px; background: rgba(75,158,47,0.12); border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+        .c-ico svg { width: 18px; height: 18px; color: var(--green); }
+        .c-detail span, .c-detail a { font-size: 0.94rem; color: rgba(255,255,255,0.8); transition: color var(--transition); }
+        .c-detail a:hover { color: var(--green); }
+        .c-btns { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 28px; }
+        .c-btn { display: inline-flex; align-items: center; gap: 8px; padding: 11px 20px; border-radius: 50px; font-weight: 600; font-size: 0.86rem; transition: all var(--transition); }
+        .c-btn.phone { background: var(--navy-light); color: var(--white); }
+        .c-btn.phone:hover { background: var(--green); transform: translateY(-2px); }
+        .c-btn.wa { background: #25D366; color: var(--white); }
+        .c-btn.wa:hover { background: #20BD5A; transform: translateY(-2px); }
+        .c-btn.fb { background: #1877F2; color: var(--white); }
+        .c-btn.fb:hover { background: #166FE5; transform: translateY(-2px); }
+        .c-btn svg { width: 16px; height: 16px; }
+        .c-guarantee { display: flex; align-items: center; gap: 12px; background: rgba(75,158,47,0.08); border: 1px solid rgba(75,158,47,0.15); border-radius: var(--radius); padding: 14px 18px; margin-top: 24px; }
+        .c-guarantee svg { width: 24px; height: 24px; color: var(--green); flex-shrink: 0; }
+        .c-guarantee span { font-size: 0.82rem; font-weight: 600; color: rgba(255,255,255,0.8); line-height: 1.5; }
 
-        /* ===== PROCESS ===== */
-        .process-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; text-align: center; }
-        .process-step { position: relative; }
-        .process-step-num { width: 56px; height: 56px; background: linear-gradient(135deg, var(--primary), var(--primary-deep)); color: var(--white); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-size: 1.3rem; font-weight: 700; margin: 0 auto 18px; }
-        .process-step h4 { font-family: var(--font-body); font-weight: 700; font-size: 1rem; margin-bottom: 8px; color: var(--navy); }
-        .process-step p { font-size: 0.88rem; color: var(--gray-600); line-height: 1.6; }
-        .process-step::after { content: ''; position: absolute; top: 28px; left: 75%; width: 50%; height: 2px; background: var(--gray-200); }
-        .process-step:last-child::after { display: none; }
+        .form-box { background: var(--white); border-radius: var(--radius-lg); padding: 40px; box-shadow: var(--shadow-lg); position: relative; z-index: 2; }
+        .form-box h3 { font-size: 1.3rem; color: var(--navy); margin-bottom: 6px; }
+        .form-box > p { font-size: 0.86rem; color: var(--gray-400); margin-bottom: 24px; }
+        .f-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+        .f-grp { display: flex; flex-direction: column; }
+        .f-grp.full { grid-column: 1 / -1; }
+        .f-grp label { font-size: 0.78rem; font-weight: 600; color: var(--navy); margin-bottom: 5px; text-transform: uppercase; letter-spacing: 0.05em; }
+        .f-grp input, .f-grp select, .f-grp textarea { padding: 13px 16px; border: 2px solid var(--gray-100); border-radius: 8px; font-family: var(--font-body); font-size: 0.94rem; color: var(--navy); background: var(--gray-50); transition: all var(--transition); outline: none; }
+        .f-grp input:focus, .f-grp select:focus, .f-grp textarea:focus { border-color: var(--green); background: var(--white); box-shadow: 0 0 0 3px var(--green-glow); }
+        .f-grp textarea { resize: vertical; min-height: 90px; }
+        .f-grp select { appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%239CA3B5' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 12px center; padding-right: 36px; }
+        .btn-submit { width: 100%; margin-top: 8px; background: var(--green); color: var(--white); padding: 16px 32px; border-radius: 50px; font-weight: 700; font-size: 1rem; transition: all var(--transition); box-shadow: var(--shadow-green); display: inline-flex; align-items: center; justify-content: center; gap: 10px; }
+        .btn-submit:hover { background: var(--green-dark); transform: translateY(-2px); }
 
-        /* ===== PRICING ===== */
-        .pricing-wrapper { max-width: 900px; margin: 0 auto; }
-        .pricing-table { background: var(--white); border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-lg); border: 1px solid var(--gray-100); }
-        .pricing-row { display: grid; grid-template-columns: 1fr 1fr 1fr; align-items: center; }
-        .pricing-row:not(.pricing-header):hover { background: var(--primary-light); }
-        .pricing-row:not(:last-child) { border-bottom: 1px solid var(--gray-100); }
-        .pricing-header { background: var(--navy); }
-        .pricing-cell { padding: 22px 32px; font-size: 0.95rem; }
-        .pricing-header .pricing-cell { color: var(--white); font-weight: 600; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; }
-        .pricing-cell:nth-child(2), .pricing-cell:nth-child(3) { text-align: center; }
-        .pricing-cell .price { font-family: var(--font-display); font-size: 1.25rem; font-weight: 700; color: var(--primary-dark); }
-        .pricing-cell .home-type { font-weight: 600; color: var(--navy); }
-        .pricing-cell .includes { font-size: 0.82rem; color: var(--gray-400); }
-        .pricing-row.pricing-featured { background: var(--primary-light); position: relative; }
-        .pricing-popular { position: absolute; top: 12px; right: 16px; background: var(--primary); color: var(--white); font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; padding: 4px 12px; border-radius: 50px; }
-        .pricing-note { text-align: center; margin-top: 28px; font-size: 0.92rem; color: var(--gray-600); font-style: italic; }
-        .pricing-cta { text-align: center; margin-top: 36px; display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
-
-        /* ===== FAQ ===== */
-        .faq-wrapper { max-width: 780px; margin: 0 auto; }
-        .faq-item { background: var(--white); border-radius: var(--radius-md); margin-bottom: 14px; border: 1px solid var(--gray-100); overflow: hidden; transition: all var(--transition); }
-        .faq-item:hover, .faq-item.active { box-shadow: var(--shadow-sm); border-color: rgba(37,99,235,0.15); }
-        .faq-question { display: flex; align-items: center; justify-content: space-between; width: 100%; background: none; padding: 22px 28px; font-size: 1rem; font-weight: 600; color: var(--navy); text-align: left; transition: color var(--transition); }
-        .faq-item.active .faq-question { color: var(--primary); }
-        .faq-icon { flex-shrink: 0; width: 32px; height: 32px; background: var(--primary-light); border-radius: 8px; display: flex; align-items: center; justify-content: center; transition: all var(--transition); }
-        .faq-item.active .faq-icon { background: var(--primary); transform: rotate(45deg); }
-        .faq-icon svg { width: 16px; height: 16px; color: var(--primary); transition: color var(--transition); }
-        .faq-item.active .faq-icon svg { color: var(--white); }
-        .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
-        .faq-item.active .faq-answer { max-height: 300px; }
-        .faq-answer-inner { padding: 0 28px 22px; font-size: 0.95rem; color: var(--gray-600); line-height: 1.8; }
-
-        /* ===== CTA BANNER ===== */
-        .cta-banner { background: linear-gradient(135deg, var(--navy) 0%, var(--primary-dark) 100%); padding: 70px 0; text-align: center; position: relative; overflow: hidden; }
-        .cta-banner::before { content: ''; position: absolute; top: -50%; right: -20%; width: 600px; height: 600px; background: radial-gradient(circle, rgba(37,99,235,0.15) 0%, transparent 70%); border-radius: 50%; }
-        .cta-banner h2 { font-size: 2.2rem; color: var(--white); margin-bottom: 16px; position: relative; z-index: 2; }
-        .cta-banner p { color: rgba(255,255,255,0.7); font-size: 1.05rem; margin-bottom: 32px; position: relative; z-index: 2; }
-        .cta-banner .btn-row { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; position: relative; z-index: 2; }
-
-        /* ===== CONTACT ===== */
-        .contact-section { background: linear-gradient(135deg, var(--navy) 0%, #1f3547 50%, #243d52 100%); color: var(--white); position: relative; overflow: hidden; }
-        .contact-section::before { content: ''; position: absolute; top: -50%; right: -20%; width: 600px; height: 600px; background: radial-gradient(circle, rgba(37,99,235,0.1) 0%, transparent 70%); border-radius: 50%; pointer-events: none; }
-        .contact-section .section-header h2 { color: var(--white); }
-        .contact-section .section-header p { color: rgba(255,255,255,0.65); }
-        .contact-section .section-label { color: var(--accent); }
-
-        .contact-grid { display: grid; grid-template-columns: 1fr 1.3fr; gap: 60px; align-items: start; }
-        .contact-info h3 { font-size: 1.6rem; color: var(--white); margin-bottom: 20px; }
-        .contact-info p { color: rgba(255,255,255,0.65); line-height: 1.8; margin-bottom: 36px; }
-        .contact-detail { display: flex; align-items: center; gap: 16px; margin-bottom: 20px; }
-        .contact-detail-icon { width: 48px; height: 48px; background: rgba(37,99,235,0.15); border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-        .contact-detail-icon svg { width: 20px; height: 20px; color: var(--accent); }
-        .contact-detail span { font-size: 0.95rem; color: rgba(255,255,255,0.85); }
-        .contact-detail a { color: rgba(255,255,255,0.85); transition: color var(--transition); }
-        .contact-detail a:hover { color: var(--accent); }
-
-        .contact-quick-btns { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 30px; }
-        .contact-quick-btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 22px; border-radius: 50px; font-weight: 600; font-size: 0.88rem; transition: all var(--transition); }
-        .contact-quick-btn.phone { background: var(--primary); color: var(--white); }
-        .contact-quick-btn.phone:hover { background: var(--primary-deep); transform: translateY(-2px); }
-        .contact-quick-btn.wa { background: #25D366; color: var(--white); }
-        .contact-quick-btn.wa:hover { background: #20BD5A; transform: translateY(-2px); }
-        .contact-quick-btn.fb { background: #1877F2; color: var(--white); }
-        .contact-quick-btn.fb:hover { background: #166FE5; transform: translateY(-2px); }
-        .contact-quick-btn svg { width: 18px; height: 18px; }
-
-        .contact-form-wrapper { background: var(--white); border-radius: var(--radius-xl); padding: 44px; box-shadow: var(--shadow-lg); position: relative; z-index: 2; }
-        .contact-form-wrapper h3 { font-size: 1.4rem; color: var(--navy); margin-bottom: 8px; }
-        .contact-form-wrapper > p { font-size: 0.9rem; color: var(--gray-400); margin-bottom: 28px; }
-        .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
-        .form-group { display: flex; flex-direction: column; }
-        .form-group.full { grid-column: 1 / -1; }
-        .form-group label { font-size: 0.82rem; font-weight: 600; color: var(--navy); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.05em; }
-        .form-group input, .form-group select, .form-group textarea { padding: 14px 18px; border: 2px solid var(--gray-100); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: 0.95rem; color: var(--navy); background: var(--gray-50); transition: all var(--transition); outline: none; }
-        .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--primary); background: var(--white); box-shadow: 0 0 0 4px var(--primary-glow); }
-        .form-group input::placeholder, .form-group textarea::placeholder { color: var(--gray-400); }
-        .form-group textarea { resize: vertical; min-height: 100px; }
-        .form-group select { appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%2394A3B8' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 14px center; padding-right: 40px; }
-        .btn-submit { width: 100%; margin-top: 10px; background: linear-gradient(135deg, var(--primary), var(--primary-deep)); color: var(--white); padding: 18px 34px; border-radius: 50px; font-weight: 700; font-size: 1.05rem; transition: all var(--transition); box-shadow: var(--shadow-primary); display: inline-flex; align-items: center; justify-content: center; gap: 10px; }
-        .btn-submit:hover { background: linear-gradient(135deg, var(--primary-deep), #1e40af); transform: translateY(-2px); box-shadow: 0 12px 40px rgba(37,99,235,0.25); }
-
-        /* ===== FOOTER ===== */
-        .footer { background: #0a1628; color: rgba(255,255,255,0.65); padding: 70px 0 0; }
-        .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 40px; padding-bottom: 50px; border-bottom: 1px solid rgba(255,255,255,0.06); }
-        .footer-brand .nav-logo-text { color: var(--white); margin-bottom: 16px; }
-        .footer-brand p { font-size: 0.9rem; line-height: 1.7; margin-bottom: 24px; max-width: 280px; }
-        .footer-social { display: flex; gap: 12px; }
-        .footer-social a { width: 42px; height: 42px; background: rgba(255,255,255,0.06); border-radius: 10px; display: flex; align-items: center; justify-content: center; transition: all var(--transition); }
-        .footer-social a:hover { background: var(--primary); transform: translateY(-3px); }
-        .footer-social a svg { width: 18px; height: 18px; color: rgba(255,255,255,0.7); }
+        /* Footer */
+        .footer { background: #0B0A2E; color: rgba(255,255,255,0.6); padding: 60px 0 0; }
+        .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 36px; padding-bottom: 44px; border-bottom: 1px solid rgba(255,255,255,0.06); }
+        .footer-brand img { height: 36px; margin-bottom: 16px; filter: brightness(10); }
+        .footer-brand p { font-size: 0.88rem; line-height: 1.7; margin-bottom: 20px; max-width: 260px; }
+        .footer-social { display: flex; gap: 10px; }
+        .footer-social a { width: 40px; height: 40px; background: rgba(255,255,255,0.05); border-radius: 10px; display: flex; align-items: center; justify-content: center; transition: all var(--transition); }
+        .footer-social a:hover { background: var(--green); transform: translateY(-2px); }
+        .footer-social a svg { width: 16px; height: 16px; color: rgba(255,255,255,0.6); }
         .footer-social a:hover svg { color: var(--white); }
-        .footer-col h4 { font-family: var(--font-body); font-weight: 700; font-size: 0.9rem; color: var(--white); margin-bottom: 20px; text-transform: uppercase; letter-spacing: 0.06em; }
-        .footer-col a { display: block; font-size: 0.9rem; margin-bottom: 12px; transition: all var(--transition); }
-        .footer-col a:hover { color: var(--accent); transform: translateX(4px); }
-        .footer-guarantee { display: flex; align-items: center; gap: 12px; background: rgba(37,99,235,0.08); border: 1px solid rgba(37,99,235,0.15); border-radius: var(--radius-md); padding: 16px 20px; margin-top: 16px; }
-        .footer-guarantee svg { width: 28px; height: 28px; color: var(--primary); flex-shrink: 0; }
-        .footer-guarantee span { font-size: 0.82rem; font-weight: 600; color: rgba(255,255,255,0.85); line-height: 1.5; }
-        .footer-bottom { text-align: center; padding: 24px 0; font-size: 0.82rem; }
+        .footer-col h4 { font-family: var(--font-body); font-weight: 700; font-size: 0.86rem; color: var(--white); margin-bottom: 18px; text-transform: uppercase; letter-spacing: 0.06em; }
+        .footer-col a { display: block; font-size: 0.88rem; margin-bottom: 10px; transition: all var(--transition); }
+        .footer-col a:hover { color: var(--green); transform: translateX(3px); }
+        .footer-bottom { text-align: center; padding: 20px 0; font-size: 0.8rem; }
 
-        /* Floating WhatsApp button */
-        .whatsapp-float { position: fixed; bottom: 90px; right: 30px; width: 56px; height: 56px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 20px rgba(37,211,102,0.35); z-index: 100; transition: all var(--transition); }
-        .whatsapp-float:hover { transform: scale(1.1); box-shadow: 0 8px 30px rgba(37,211,102,0.45); }
-        .whatsapp-float svg { width: 28px; height: 28px; color: var(--white); }
+        /* WhatsApp float */
+        .wa-float { position: fixed; bottom: 80px; right: 28px; width: 54px; height: 54px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 18px rgba(37,211,102,0.35); z-index: 100; transition: all var(--transition); }
+        .wa-float:hover { transform: scale(1.1); box-shadow: 0 6px 28px rgba(37,211,102,0.45); }
+        .wa-float svg { width: 26px; height: 26px; color: var(--white); }
+        .btt { position: fixed; bottom: 24px; right: 28px; width: 44px; height: 44px; background: var(--navy); color: var(--white); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow-md); opacity: 0; pointer-events: none; transform: translateY(16px); transition: all var(--transition); z-index: 100; }
+        .btt.visible { opacity: 1; pointer-events: auto; transform: translateY(0); }
+        .btt:hover { background: var(--green); }
+        .btt svg { width: 18px; height: 18px; }
 
-        .back-to-top { position: fixed; bottom: 30px; right: 30px; width: 48px; height: 48px; background: var(--primary); color: var(--white); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow-primary); opacity: 0; pointer-events: none; transform: translateY(20px); transition: all var(--transition); z-index: 100; }
-        .back-to-top.visible { opacity: 1; pointer-events: auto; transform: translateY(0); }
-        .back-to-top:hover { background: var(--primary-deep); transform: translateY(-4px); }
-        .back-to-top svg { width: 20px; height: 20px; }
-
-        /* ===== RESPONSIVE ===== */
+        /* Responsive */
         @media (max-width: 1024px) {
-            .hero-inner { grid-template-columns: 1fr; text-align: center; gap: 40px; }
+            .hero-inner { grid-template-columns: 1fr; text-align: center; gap: 36px; }
             .hero-content { max-width: 100%; margin: 0 auto; }
             .hero-text { margin: 0 auto 36px; }
-            .hero-buttons { justify-content: center; }
+            .hero-btns { justify-content: center; }
             .hero-visual { order: -1; }
-            .hero-image-wrapper { max-width: 400px; margin: 0 auto; }
-            .hero-image-wrapper img { height: 400px; }
-            .hero-float-card { left: 0; bottom: -10px; }
-            .hero-float-card-2 { right: 0; top: 20px; }
-            .trust-strip-inner { grid-template-columns: repeat(2, 1fr); }
-            .why-grid { grid-template-columns: 1fr; gap: 40px; }
-            .why-image img { height: 400px; }
-            .process-grid { grid-template-columns: repeat(2, 1fr); gap: 40px; }
-            .process-step::after { display: none; }
+            .hero-img img { height: 360px; }
+            .hero-float-1 { left: 0; bottom: -10px; }
+            .hero-float-2 { right: 0; top: 16px; }
+            .trust-grid { grid-template-columns: repeat(2, 1fr); }
+            .why-grid { grid-template-columns: 1fr; gap: 36px; }
+            .why-img img { height: 360px; }
+            .proc-grid { grid-template-columns: repeat(2, 1fr); gap: 36px; }
+            .proc::after { display: none; }
             .contact-grid { grid-template-columns: 1fr; }
             .footer-grid { grid-template-columns: 1fr 1fr; }
         }
         @media (max-width: 768px) {
             .nav-links { display: none; }
             .nav-hamburger { display: flex; }
-            .section { padding: 70px 0; }
-            .hero { min-height: auto; padding-top: 100px; }
-            .hero-inner { padding: 0 0 40px; }
-            .hero h1 { font-size: 2rem; }
-            .trust-strip { margin-top: -20px; padding-bottom: 30px; }
-            .trust-strip-inner { grid-template-columns: 1fr 1fr; gap: 12px; }
-            .trust-badge { padding: 16px 14px; }
-            .trust-badge-text { font-size: 0.82rem; }
-            .services-grid { grid-template-columns: 1fr; }
-            .pricing-row { grid-template-columns: 1fr 1fr; }
-            .pricing-cell:nth-child(3) { grid-column: 1 / -1; text-align: left; padding-top: 0; }
-            .form-grid { grid-template-columns: 1fr; }
-            .contact-form-wrapper { padding: 28px 22px; }
+            .section { padding: 64px 0; }
+            .hero { padding: 110px 0 60px; }
+            .hero h1 { font-size: 2.1rem; }
+            .trust { padding: 30px 0 50px; }
+            .trust-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+            .trust-card { padding: 16px 14px; }
+            .trust-text { font-size: 0.84rem; }
+            .svc-grid { grid-template-columns: 1fr; }
+            .price-row { grid-template-columns: 1fr 1fr; }
+            .price-cell:nth-child(3) { grid-column: 1 / -1; text-align: left; padding-top: 0; }
+            .f-grid { grid-template-columns: 1fr; }
+            .form-box { padding: 26px 20px; }
             .footer-grid { grid-template-columns: 1fr; }
-            .hero-float-card, .hero-float-card-2 { display: none; }
+            .hero-float { display: none; }
         }
         @media (max-width: 480px) {
-            .trust-strip-inner { grid-template-columns: 1fr; }
-            .hero-buttons { flex-direction: column; }
-            .hero-buttons a { width: 100%; justify-content: center; }
-            .hero-image-wrapper img { height: 300px; }
-            .process-grid { grid-template-columns: 1fr; }
+            .trust-grid { grid-template-columns: 1fr; }
+            .hero-btns { flex-direction: column; }
+            .hero-btns a { width: 100%; justify-content: center; }
+            .proc-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
 <body>
 
-    <!-- NAV -->
-    <nav class="nav" id="nav">
-        <div class="container nav-inner">
-            <a href="#home" class="nav-logo">
-                <div class="nav-logo-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
-                </div>
-                <div class="nav-logo-text">Infinium <span>Services</span></div>
-            </a>
-            <div class="nav-links">
-                <a href="#home">Home</a>
-                <a href="#why-medeco">Why Us</a>
-                <a href="#services">Services</a>
-                <a href="#prices">Prices</a>
-                <a href="#faq">Q & A</a>
-                <a href="tel:+14167265507" class="nav-phone">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                    (416) 726-5507
-                </a>
-                <a href="#contact" class="nav-cta">
-                    Get a Free Quote
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
-                </a>
-            </div>
-            <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+<nav class="nav" id="nav">
+    <div class="container nav-inner">
+        <a href="#home" class="nav-logo"><img src="logo.png" alt="Infinium Services"></a>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#why">Why Us</a>
+            <a href="#services">Services</a>
+            <a href="#prices">Prices</a>
+            <a href="#faq">Q&A</a>
+            <a href="tel:+14167265507" class="nav-phone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>(416) 726-5507</a>
+            <a href="#contact" class="nav-cta">Free Quote</a>
         </div>
-    </nav>
-
-    <div class="nav-mobile" id="mobileMenu">
-        <a href="#home" class="mobile-link">Home</a>
-        <a href="#why-medeco" class="mobile-link">Why Us</a>
-        <a href="#services" class="mobile-link">Services</a>
-        <a href="#prices" class="mobile-link">Prices</a>
-        <a href="#faq" class="mobile-link">Q & A</a>
-        <a href="tel:+14167265507" class="mobile-link" style="color: var(--primary);">Call (416) 726-5507</a>
-        <a href="https://wa.me/14167265507" class="mobile-link" style="color: #25D366;">WhatsApp Us</a>
-        <a href="#contact" class="mobile-link" style="color: var(--gold);">Get a Free Quote</a>
+        <button class="nav-hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
+</nav>
+<div class="nav-mobile" id="mobileMenu">
+    <a href="#home" class="mobile-link">Home</a>
+    <a href="#why" class="mobile-link">Why Us</a>
+    <a href="#services" class="mobile-link">Services</a>
+    <a href="#prices" class="mobile-link">Prices</a>
+    <a href="#faq" class="mobile-link">Q&A</a>
+    <a href="tel:+14167265507" class="mobile-link" style="color:var(--green)">Call (416) 726-5507</a>
+    <a href="https://wa.me/14167265507" class="mobile-link" style="color:#25D366">WhatsApp Us</a>
+    <a href="#contact" class="mobile-link" style="color:var(--navy);font-weight:700">Get a Free Quote</a>
+</div>
 
-    <!-- HERO -->
-    <section class="hero" id="home">
-        <div class="hero-deco hero-deco-1"><svg viewBox="0 0 120 120" fill="currentColor" color="#2563EB"><path d="M60 10c-20 0-40 20-40 50s20 50 40 50c10-20 10-40 0-50 20 0 40-20 40-30S80 10 60 10z"/></svg></div>
-        <div class="hero-deco hero-deco-2"><svg viewBox="0 0 80 80" fill="currentColor" color="#2563EB"><circle cx="40" cy="40" r="35"/></svg></div>
-        <div class="hero-deco hero-deco-3"><svg viewBox="0 0 60 60" fill="currentColor" color="#D4A853"><polygon points="30,5 55,50 5,50"/></svg></div>
-
-        <div class="container hero-inner">
-            <div class="hero-content">
-                <div class="hero-badge reveal">
-                    <span class="hero-badge-dot"></span>
-                    Trusted by 500+ GTA Families
-                </div>
-                <h1 class="reveal reveal-delay-1">Premium <em>Eco Cleaning</em> for Your Home</h1>
-                <p class="hero-text reveal reveal-delay-2">Hospital-level disinfection meets eco-friendly products. Infinium Services delivers the cleanest, healthiest home for your family — no harsh chemicals, no compromises.</p>
-                <div class="hero-buttons reveal reveal-delay-3">
-                    <a href="#contact" class="btn-primary">
-                        Get a Free Quote
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
-                    </a>
-                    <a href="https://wa.me/14167265507?text=Hi%20Infinium%20Services!%20I'd%20like%20a%20free%20cleaning%20quote." class="btn-whatsapp" target="_blank">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                        WhatsApp Us
-                    </a>
-                </div>
-                <div class="hero-buttons reveal reveal-delay-4">
-                    <a href="tel:+14167265507" class="btn-call">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                        Call (416) 726-5507
-                    </a>
-                </div>
+<section class="hero" id="home">
+    <div class="container hero-inner">
+        <div class="hero-content">
+            <div class="hero-badge reveal"><span class="hero-badge-dot"></span>Trusted by 500+ GTA Families</div>
+            <h1 class="reveal reveal-d1">Premium <em>Eco-Friendly</em> Cleaning for Your Home</h1>
+            <p class="hero-text reveal reveal-d2">Your family deserves a spotless, healthy home — without harsh chemicals. Infinium Services combines hospital-grade disinfection with 100% eco-friendly products for a cleaner you can trust.</p>
+            <div class="hero-btns reveal reveal-d3">
+                <a href="#contact" class="btn btn-green">Get a Free Quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></a>
+                <a href="https://wa.me/14167265507?text=Hi%20Infinium%20Services!%20I'd%20like%20a%20free%20cleaning%20quote." class="btn btn-wa" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>WhatsApp Us</a>
             </div>
-
-            <div class="hero-visual reveal reveal-delay-2">
-                <div class="hero-image-wrapper">
-                    <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&q=80" alt="Professional eco cleaning in a modern bright home" loading="eager">
-                </div>
-                <div class="hero-float-card">
-                    <div class="hero-float-card-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                    </div>
-                    <div class="hero-float-card-text"><strong>10+ Years</strong><span>Trusted Experience</span></div>
-                </div>
-                <div class="hero-float-card-2">
-                    <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-                    <span>4.9/5 Rating</span>
-                </div>
+            <div class="hero-btns reveal reveal-d4">
+                <a href="tel:+14167265507" class="btn btn-outline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Call (416) 726-5507</a>
             </div>
         </div>
-    </section>
-
-    <!-- TRUST BADGES -->
-    <section class="trust-strip">
-        <div class="container trust-strip-inner">
-            <div class="trust-badge reveal">
-                <div class="trust-badge-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div>
-                <span class="trust-badge-text">Health Canada Approved</span>
+        <div class="hero-visual reveal reveal-d2">
+            <div class="hero-img"><img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&q=80" alt="Professional cleaning service" loading="eager"></div>
+            <div class="hero-float hero-float-1">
+                <div class="hero-float-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+                <div><strong>10+ Years</strong><span>Trusted Experience</span></div>
             </div>
-            <div class="trust-badge reveal reveal-delay-1">
-                <div class="trust-badge-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c6.23-5.89 8-8.5 8-12a8 8 0 1 0-16 0c0 3.5 1.77 6.11 8 12z"/><circle cx="12" cy="10" r="3"/></svg></div>
-                <span class="trust-badge-text">100% Eco-Friendly</span>
-            </div>
-            <div class="trust-badge reveal reveal-delay-2">
-                <div class="trust-badge-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
-                <span class="trust-badge-text">Background-Checked Staff</span>
-            </div>
-            <div class="trust-badge reveal reveal-delay-3">
-                <div class="trust-badge-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><path d="M8.21 13.89L7 23l5-3 5 3-1.21-9.12"/></svg></div>
-                <span class="trust-badge-text">Satisfaction Guaranteed</span>
+            <div class="hero-float hero-float-2" style="animation-delay:1s">
+                <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                <span style="font-weight:600;font-size:.84rem;color:var(--navy)">4.9/5 Rating</span>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- WHY US -->
-    <section class="section section-alt" id="why-medeco">
-        <div class="container why-grid">
-            <div class="why-image reveal">
-                <img src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?w=700&q=80" alt="Eco-friendly cleaning products" loading="lazy">
-                <div class="why-image-badge">MedEco Certified</div>
-            </div>
-            <div class="why-content">
-                <div class="section-label reveal">Why Choose Us</div>
-                <h2 class="reveal reveal-delay-1">Why Infinium Services?</h2>
-                <p class="subtitle reveal reveal-delay-1">Not Your Average House Cleaning</p>
-                <div class="feature-list">
-                    <div class="feature-item reveal reveal-delay-1">
-                        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c4-4 8-7.5 8-12a8 8 0 1 0-16 0c0 4.5 4 8 8 12z"/><circle cx="12" cy="10" r="3"/></svg></div>
-                        <div><h4>Eco, Health Canada-Approved Products</h4><p>Bleach-free, hospital-grade yet gentle formulas safe for children, pets, and sensitive individuals.</p></div>
-                    </div>
-                    <div class="feature-item reveal reveal-delay-2">
-                        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg></div>
-                        <div><h4>HEPA Vacuum Systems</h4><p>Medical-grade HEPA filtration captures 99.97% of allergens, dust mites, and airborne particles.</p></div>
-                    </div>
-                    <div class="feature-item reveal reveal-delay-3">
-                        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
-                        <div><h4>High-Touch Disinfection Protocol</h4><p>Every surface you touch daily — doorknobs, switches, handles, remotes — gets targeted medical-grade treatment.</p></div>
-                    </div>
-                    <div class="feature-item reveal reveal-delay-4">
-                        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 15l2 2 4-4"/></svg></div>
-                        <div><h4>Audit & Checklist Verification</h4><p>Every clean follows a strict checklist, verified and documented so nothing is ever missed.</p></div>
-                    </div>
-                </div>
+<section class="trust">
+    <div class="container trust-grid">
+        <div class="trust-card reveal"><div class="trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div><span class="trust-text">Health Canada Approved</span></div>
+        <div class="trust-card reveal reveal-d1"><div class="trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c6.23-5.89 8-8.5 8-12a8 8 0 1 0-16 0c0 3.5 1.77 6.11 8 12z"/><circle cx="12" cy="10" r="3"/></svg></div><span class="trust-text">100% Eco-Friendly</span></div>
+        <div class="trust-card reveal reveal-d2"><div class="trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><span class="trust-text">Background-Checked Staff</span></div>
+        <div class="trust-card reveal reveal-d3"><div class="trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><path d="M8.21 13.89L7 23l5-3 5 3-1.21-9.12"/></svg></div><span class="trust-text">Satisfaction Guaranteed</span></div>
+    </div>
+</section>
+
+<section class="section section-gray" id="why">
+    <div class="container why-grid">
+        <div class="why-img reveal"><img src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?w=700&q=80" alt="Eco-friendly cleaning products" loading="lazy"><div class="why-img-badge">Eco Certified</div></div>
+        <div class="why-content">
+            <div class="section-tag reveal">Why Choose Us</div>
+            <h2 class="reveal reveal-d1">Why Infinium Services?</h2>
+            <p class="subtitle reveal reveal-d1">Not Your Average House Cleaning</p>
+            <div class="feat-list">
+                <div class="feat reveal reveal-d1"><div class="feat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c4-4 8-7.5 8-12a8 8 0 1 0-16 0c0 4.5 4 8 8 12z"/><circle cx="12" cy="10" r="3"/></svg></div><div><h4>Eco, Health Canada-Approved Products</h4><p>Bleach-free, hospital-grade yet gentle formulas safe for children, pets, and sensitive individuals.</p></div></div>
+                <div class="feat reveal reveal-d2"><div class="feat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg></div><div><h4>HEPA Vacuum Systems</h4><p>Medical-grade HEPA filtration captures 99.97% of allergens, dust mites, and airborne particles.</p></div></div>
+                <div class="feat reveal reveal-d3"><div class="feat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div><div><h4>High-Touch Disinfection Protocol</h4><p>Doorknobs, switches, handles, remotes — every high-touch surface gets targeted treatment.</p></div></div>
+                <div class="feat reveal reveal-d4"><div class="feat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 15l2 2 4-4"/></svg></div><div><h4>Audit & Checklist Verification</h4><p>Every clean follows a strict checklist, verified and documented so nothing is ever missed.</p></div></div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- SERVICES -->
-    <section class="section" id="services">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-label reveal">Our Services</div>
-                <h2 class="reveal reveal-delay-1">Professional Cleaning Services</h2>
-                <p class="reveal reveal-delay-2">From routine upkeep to specialized deep cleans, every service follows our rigorous medical-grade protocol with eco-friendly products.</p>
+<section class="section" id="services">
+    <div class="container">
+        <div class="section-head"><div class="section-tag reveal">Our Services</div><h2 class="reveal reveal-d1">Professional Cleaning Services</h2><p class="reveal reveal-d2">From routine upkeep to specialized deep cleans, every service uses eco-friendly products and follows our rigorous cleaning protocol.</p></div>
+        <div class="svc-grid">
+            <div class="svc reveal"><div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg></div><h3>Standard Residential Cleaning</h3><p>Complete home maintenance — dusting, vacuuming, mopping, kitchen & bathroom sanitization, and high-touch surface disinfection. Weekly or biweekly.</p><a href="#contact" class="svc-link">Book Now <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></a></div>
+            <div class="svc reveal reveal-d1"><div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12h8"/><path d="M12 8v8"/></svg></div><h3>Deep Cleaning / One-Time</h3><p>Intensive top-to-bottom cleaning — inside cabinets, behind appliances, grout scrubbing, baseboard detailing, window tracks, and vent cleaning.</p><a href="#contact" class="svc-link">Book Now <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></a></div>
+            <div class="svc reveal reveal-d2"><div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a4 4 0 0 0-8 0v2"/></svg></div><h3>Move-In / Move-Out Cleaning</h3><p>Start fresh or leave it spotless. We clean every corner — closets, appliances, fixtures, walls, and all surfaces inside and out.</p><a href="#contact" class="svc-link">Book Now <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></a></div>
+            <div class="svc reveal reveal-d3"><div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div><h3>Senior & Vulnerable Care</h3><p>Specialized for elderly residents, immunocompromised individuals, or post-surgery homes. Extra care, gentler products, thorough allergen removal.</p><a href="#contact" class="svc-link">Book Now <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></a></div>
+        </div>
+    </div>
+</section>
+
+<section class="section section-gray">
+    <div class="container">
+        <div class="section-head"><div class="section-tag reveal">How It Works</div><h2 class="reveal reveal-d1">4 Easy Steps to a Cleaner Home</h2></div>
+        <div class="proc-grid">
+            <div class="proc reveal"><div class="proc-num">1</div><h4>Request a Quote</h4><p>Fill out our form, call, or WhatsApp us with your home details.</p></div>
+            <div class="proc reveal reveal-d1"><div class="proc-num">2</div><h4>Quick Assessment</h4><p>Short phone or WhatsApp chat to understand your needs and finalize pricing.</p></div>
+            <div class="proc reveal reveal-d2"><div class="proc-num">3</div><h4>We Clean</h4><p>Our vetted team arrives with eco-friendly, professional-grade equipment.</p></div>
+            <div class="proc reveal reveal-d3"><div class="proc-num">4</div><h4>Enjoy Your Home</h4><p>Walk into a spotless home. Not happy? We re-clean free within 24 hours.</p></div>
+        </div>
+    </div>
+</section>
+
+<section class="section section-green" id="prices">
+    <div class="container">
+        <div class="section-head"><div class="section-tag reveal">Pricing</div><h2 class="reveal reveal-d1">Simple, Honest Pricing</h2><p class="reveal reveal-d2">No hidden fees. No surprises. Premium cleaning at fair rates.</p></div>
+        <div class="price-wrap reveal">
+            <div class="price-tbl">
+                <div class="price-row price-head"><div class="price-cell">Home Size</div><div class="price-cell">Starting From</div><div class="price-cell">Includes</div></div>
+                <div class="price-row"><div class="price-cell"><span class="type">1 Bed / 1 Bath</span></div><div class="price-cell"><span class="amt">$140 – $220</span></div><div class="price-cell"><span class="inc">Full Eco Protocol</span></div></div>
+                <div class="price-row"><div class="price-cell"><span class="type">2 Bed / 1–2 Bath</span></div><div class="price-cell"><span class="amt">$170 – $260</span></div><div class="price-cell"><span class="inc">Full Eco Protocol</span></div></div>
+                <div class="price-row pop"><span class="pop-tag">Most Popular</span><div class="price-cell"><span class="type">3 Bed / 2 Bath</span></div><div class="price-cell"><span class="amt">$210 – $320</span></div><div class="price-cell"><span class="inc">Full Eco Protocol</span></div></div>
+                <div class="price-row"><div class="price-cell"><span class="type">4+ Bed / 3+ Bath</span></div><div class="price-cell"><span class="amt">Custom Quote</span></div><div class="price-cell"><span class="inc">Tailored to You</span></div></div>
             </div>
-            <div class="services-grid">
-                <div class="service-card reveal">
-                    <div class="service-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg></div>
-                    <h3>Standard Residential Cleaning</h3>
-                    <p>Complete home maintenance with our full medical-grade protocol. Dusting, vacuuming, mopping, kitchen & bathroom sanitization, and high-touch surface disinfection. Perfect for weekly or biweekly upkeep.</p>
-                    <a href="#contact" class="service-card-link">Book This Service <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></a>
+            <p class="price-note">Final pricing confirmed after a short phone or WhatsApp assessment.</p>
+            <div class="price-cta"><a href="#contact" class="btn btn-green">Get Your Quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></a><a href="tel:+14167265507" class="btn btn-outline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Call Now</a></div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="faq">
+    <div class="container">
+        <div class="section-head"><div class="section-tag reveal">FAQ</div><h2 class="reveal reveal-d1">Questions & Answers</h2><p class="reveal reveal-d2">Everything you need to know about Infinium Services.</p></div>
+        <div class="faq-wrap">
+            <div class="faq-item reveal"><button class="faq-q">Are your products safe for children and pets?<span class="faq-plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">Absolutely. Every product is Health Canada-approved, bleach-free, and safe for kids, pets, and sensitive individuals. We only use eco-friendly, non-toxic formulas.</div></div></div>
+            <div class="faq-item reveal reveal-d1"><button class="faq-q">Are your staff background-checked?<span class="faq-plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">Yes. Every team member is vetted, background-checked, fully insured, and trained in our protocols before entering any home.</div></div></div>
+            <div class="faq-item reveal reveal-d2"><button class="faq-q">What if I'm not satisfied?<span class="faq-plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">100% satisfaction guarantee. If anything isn't right, we re-clean within 24 hours — no extra cost, no questions asked.</div></div></div>
+            <div class="faq-item reveal"><button class="faq-q">Do I need to be home during cleaning?<span class="faq-plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">Not at all. Many clients provide a key or access code. You're welcome to be home, but it's not required.</div></div></div>
+            <div class="faq-item reveal reveal-d1"><button class="faq-q">What areas do you serve?<span class="faq-plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">Greater Toronto Area, Durham Region, and surrounding communities — Scarborough, Markham, Pickering, Ajax, Whitby, and Oshawa.</div></div></div>
+            <div class="faq-item reveal reveal-d2"><button class="faq-q">How do I book a cleaning?<span class="faq-plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">Easy! Fill out the form below, call (416) 726-5507, or WhatsApp us. We'll do a quick assessment and get you scheduled — often within 48 hours.</div></div></div>
+            <div class="faq-item reveal"><button class="faq-q">Do you offer recurring packages?<span class="faq-plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">Yes! Weekly, biweekly, and monthly packages at discounted rates. Recurring clients get priority booking and consistent cleaning teams.</div></div></div>
+            <div class="faq-item reveal reveal-d1"><button class="faq-q">What equipment and supplies do you bring?<span class="faq-plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">Everything — HEPA vacuums, microfiber cloths, eco-friendly solutions, mops, and specialty tools. You don't need to provide anything.</div></div></div>
+        </div>
+    </div>
+</section>
+
+<section class="cta"><div class="container"><h2 class="reveal">Ready for a Cleaner, Healthier Home?</h2><p class="reveal reveal-d1">Call, WhatsApp, or fill out our quick form. We respond within hours.</p><div class="btn-row reveal reveal-d2"><a href="tel:+14167265507" class="btn btn-green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Call (416) 726-5507</a><a href="https://wa.me/14167265507?text=Hi%20Infinium%20Services!%20I'd%20like%20a%20free%20cleaning%20quote." class="btn btn-wa" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>WhatsApp Us</a></div></div></section>
+
+<section class="section contact" id="contact">
+    <div class="container">
+        <div class="section-head"><div class="section-tag reveal">Contact</div><h2 class="reveal reveal-d1">Get Your Free Quote</h2><p class="reveal reveal-d2">Tell us about your home — we'll provide a personalized estimate within hours.</p></div>
+        <div class="contact-grid">
+            <div class="contact-info reveal">
+                <h3>Let's Make Your Home Healthier</h3>
+                <p>Reach out by phone, WhatsApp, or fill out the form. No obligations — just honest pricing.</p>
+                <div class="c-detail"><div class="c-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div><span><a href="tel:+14167265507">(416) 726-5507</a> — Call or Text</span></div>
+                <div class="c-detail"><div class="c-ico"><svg viewBox="0 0 24 24" fill="currentColor" style="color:#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></div><span><a href="https://wa.me/14167265507" target="_blank">WhatsApp Us</a> — Quick Response</span></div>
+                <div class="c-detail"><div class="c-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><span>info@infiniumservices.ca</span></div>
+                <div class="c-detail"><div class="c-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div><span>GTA, Durham Region & Surroundings</span></div>
+                <div class="c-btns">
+                    <a href="tel:+14167265507" class="c-btn phone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Call</a>
+                    <a href="https://wa.me/14167265507" class="c-btn wa" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>WhatsApp</a>
+                    <a href="https://www.facebook.com/profile.php?id=100068772686465" class="c-btn fb" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>Facebook</a>
                 </div>
-                <div class="service-card reveal reveal-delay-1">
-                    <div class="service-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12h8"/><path d="M12 8v8"/></svg></div>
-                    <h3>Deep Cleaning / One-Time</h3>
-                    <p>An intensive, top-to-bottom deep clean. Inside cabinets, behind appliances, grout scrubbing, baseboard detailing, window tracks, and vent cleaning. Ideal for seasonal resets or first-time clients.</p>
-                    <a href="#contact" class="service-card-link">Book This Service <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></a>
-                </div>
-                <div class="service-card reveal reveal-delay-2">
-                    <div class="service-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a4 4 0 0 0-8 0v2"/></svg></div>
-                    <h3>Move-In / Move-Out Cleaning</h3>
-                    <p>Ensure your new space is medically clean from day one — or leave your old one spotless. We clean every corner: closets, appliances, fixtures, walls, and all surfaces inside and out.</p>
-                    <a href="#contact" class="service-card-link">Book This Service <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></a>
-                </div>
-                <div class="service-card reveal reveal-delay-3">
-                    <div class="service-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
-                    <h3>Senior & Health-Vulnerable</h3>
-                    <p>Specialized cleaning for elderly residents, immunocompromised individuals, or post-surgery recovery homes. Extra care, gentler products, and thorough allergen removal for sensitive environments.</p>
-                    <a href="#contact" class="service-card-link">Book This Service <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></a>
-                </div>
+                <div class="c-guarantee"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg><span>100% Satisfaction Guarantee — re-clean within 24 hours if not happy.</span></div>
+            </div>
+            <div class="form-box reveal reveal-d1">
+                <h3>Request Your Free Quote</h3><p>Fields marked * are required.</p>
+                <form id="quoteForm">
+                    <div class="f-grid">
+                        <div class="f-grp"><label>Full Name *</label><input type="text" placeholder="Your full name" required></div>
+                        <div class="f-grp"><label>Phone / WhatsApp *</label><input type="tel" placeholder="(416) 000-0000" required></div>
+                        <div class="f-grp"><label>Email *</label><input type="email" placeholder="you@email.com" required></div>
+                        <div class="f-grp"><label>City / Area *</label><input type="text" placeholder="e.g. Toronto, Oshawa" required></div>
+                        <div class="f-grp"><label>Service Type</label><select><option disabled selected>Select a service</option><option>Standard Residential</option><option>Deep Cleaning / One-Time</option><option>Move-In / Move-Out</option><option>Senior & Vulnerable Care</option></select></div>
+                        <div class="f-grp"><label>Home Size</label><select><option disabled selected>Select size</option><option>1 Bed / 1 Bath</option><option>2 Bed / 1-2 Bath</option><option>3 Bed / 2 Bath</option><option>4+ Bed / 3+ Bath</option></select></div>
+                        <div class="f-grp"><label>Home Type</label><select><option disabled selected>Select type</option><option>Detached</option><option>Semi-Detached</option><option>Townhouse</option><option>Condo / Apt</option><option>Other</option></select></div>
+                        <div class="f-grp"><label>Preferred Date</label><input type="date"></div>
+                        <div class="f-grp full"><label>Preferred Time</label><select><option disabled selected>Select time</option><option>Morning (8am-12pm)</option><option>Afternoon (12-4pm)</option><option>Evening (4-7pm)</option><option>Flexible</option></select></div>
+                        <div class="f-grp full"><label>Notes / Requests</label><textarea placeholder="Allergies, focus areas, access instructions..."></textarea></div>
+                        <div class="f-grp full"><button type="submit" class="btn-submit">Request My Quote <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg></button></div>
+                    </div>
+                </form>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- HOW IT WORKS -->
-    <section class="section section-alt">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-label reveal">How It Works</div>
-                <h2 class="reveal reveal-delay-1">Book Your Clean in 4 Easy Steps</h2>
-                <p class="reveal reveal-delay-2">Getting your home sparkling clean has never been easier.</p>
-            </div>
-            <div class="process-grid">
-                <div class="process-step reveal">
-                    <div class="process-step-num">1</div>
-                    <h4>Request a Quote</h4>
-                    <p>Fill out our form, call, or WhatsApp us with your home details.</p>
-                </div>
-                <div class="process-step reveal reveal-delay-1">
-                    <div class="process-step-num">2</div>
-                    <h4>Quick Assessment</h4>
-                    <p>We do a short phone or WhatsApp assessment to understand your needs.</p>
-                </div>
-                <div class="process-step reveal reveal-delay-2">
-                    <div class="process-step-num">3</div>
-                    <h4>We Clean</h4>
-                    <p>Our vetted, trained team arrives with eco-friendly, medical-grade equipment.</p>
-                </div>
-                <div class="process-step reveal reveal-delay-3">
-                    <div class="process-step-num">4</div>
-                    <h4>Enjoy Your Home</h4>
-                    <p>Walk into a spotless, sanitized home. Not happy? We re-clean free within 24 hours.</p>
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand"><img src="logo.png" alt="Infinium Services"><p>Premium eco-friendly residential cleaning. Serving the Greater Toronto Area with professional care.</p>
+                <div class="footer-social">
+                    <a href="https://wa.me/14167265507" target="_blank" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+                    <a href="https://www.facebook.com/profile.php?id=100068772686465" target="_blank" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+                    <a href="tel:+14167265507" aria-label="Phone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a>
                 </div>
             </div>
+            <div class="footer-col"><h4>Quick Links</h4><a href="#home">Home</a><a href="#why">Why Us</a><a href="#services">Services</a><a href="#prices">Prices</a><a href="#faq">Q&A</a><a href="#contact">Contact</a></div>
+            <div class="footer-col"><h4>Services</h4><a href="#services">Standard Cleaning</a><a href="#services">Deep Cleaning</a><a href="#services">Move-In / Move-Out</a><a href="#services">Senior Care</a><a href="#services">Recurring Packages</a></div>
+            <div class="footer-col"><h4>Service Areas</h4><a href="#contact">Greater Toronto Area</a><a href="#contact">Durham Region</a><a href="#contact">Scarborough & Markham</a><a href="#contact">Pickering, Ajax & Whitby</a></div>
         </div>
-    </section>
+        <div class="footer-bottom">&copy; 2025 Infinium Services. All Rights Reserved.</div>
+    </div>
+</footer>
 
-    <!-- PRICING -->
-    <section class="section section-blue" id="prices">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-label reveal">Transparent Pricing</div>
-                <h2 class="reveal reveal-delay-1">Simple, Honest Pricing</h2>
-                <p class="reveal reveal-delay-2">No hidden fees. No surprises. Premium cleaning at fair, transparent rates.</p>
-            </div>
-            <div class="pricing-wrapper reveal">
-                <div class="pricing-table">
-                    <div class="pricing-row pricing-header">
-                        <div class="pricing-cell">Home Size</div>
-                        <div class="pricing-cell">Starting From</div>
-                        <div class="pricing-cell">Includes</div>
-                    </div>
-                    <div class="pricing-row">
-                        <div class="pricing-cell"><span class="home-type">1 Bed / 1 Bath</span></div>
-                        <div class="pricing-cell"><span class="price">$140 – $220</span></div>
-                        <div class="pricing-cell"><span class="includes">Full MedEco Protocol</span></div>
-                    </div>
-                    <div class="pricing-row">
-                        <div class="pricing-cell"><span class="home-type">2 Bed / 1–2 Bath</span></div>
-                        <div class="pricing-cell"><span class="price">$170 – $260</span></div>
-                        <div class="pricing-cell"><span class="includes">Full MedEco Protocol</span></div>
-                    </div>
-                    <div class="pricing-row pricing-featured">
-                        <span class="pricing-popular">Most Popular</span>
-                        <div class="pricing-cell"><span class="home-type">3 Bed / 2 Bath</span></div>
-                        <div class="pricing-cell"><span class="price">$210 – $320</span></div>
-                        <div class="pricing-cell"><span class="includes">Full MedEco Protocol</span></div>
-                    </div>
-                    <div class="pricing-row">
-                        <div class="pricing-cell"><span class="home-type">4+ Bed / 3+ Bath</span></div>
-                        <div class="pricing-cell"><span class="price">Custom Quote</span></div>
-                        <div class="pricing-cell"><span class="includes">Tailored to Your Home</span></div>
-                    </div>
-                </div>
-                <p class="pricing-note">Final pricing confirmed after a short phone or WhatsApp assessment.</p>
-                <div class="pricing-cta">
-                    <a href="#contact" class="btn-primary">Get Your Custom Quote <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></a>
-                    <a href="tel:+14167265507" class="btn-call"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Call Now</a>
-                </div>
-            </div>
-        </div>
-    </section>
+<a href="https://wa.me/14167265507?text=Hi%20Infinium%20Services!%20I'd%20like%20a%20free%20cleaning%20quote." class="wa-float" target="_blank" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+<a href="#home" class="btt" id="btt" aria-label="Top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg></a>
 
-    <!-- FAQ -->
-    <section class="section" id="faq">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-label reveal">FAQ</div>
-                <h2 class="reveal reveal-delay-1">Common Questions, Clear Answers</h2>
-                <p class="reveal reveal-delay-2">Everything you need to know about Infinium Services.</p>
-            </div>
-            <div class="faq-wrapper">
-                <div class="faq-item reveal"><button class="faq-question">Are your products safe for children and pets?<span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button><div class="faq-answer"><div class="faq-answer-inner">Absolutely. Every product we use is Health Canada-approved, bleach-free, and designed to be safe around kids, pets, and individuals with sensitivities. We only use eco-friendly, non-toxic formulas.</div></div></div>
-                <div class="faq-item reveal reveal-delay-1"><button class="faq-question">Are your staff background-checked?<span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button><div class="faq-answer"><div class="faq-answer-inner">Yes. Every team member is vetted, background-checked, fully insured, and trained in our MedEco protocols before they ever enter a home.</div></div></div>
-                <div class="faq-item reveal reveal-delay-2"><button class="faq-question">What if I'm not satisfied with the cleaning?<span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button><div class="faq-answer"><div class="faq-answer-inner">We offer a 100% satisfaction guarantee. If anything isn't right, we'll re-clean within 24 hours at no extra cost — no questions asked.</div></div></div>
-                <div class="faq-item reveal"><button class="faq-question">Do I need to be home during the cleaning?<span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button><div class="faq-answer"><div class="faq-answer-inner">Not at all. Many clients provide a key or access code. You're welcome to be home, but it's not required. We treat your home with the utmost respect.</div></div></div>
-                <div class="faq-item reveal reveal-delay-1"><button class="faq-question">What areas do you serve?<span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button><div class="faq-answer"><div class="faq-answer-inner">We currently serve the Greater Toronto Area, Durham Region, and surrounding communities including Scarborough, Markham, Pickering, Ajax, Whitby, and Oshawa.</div></div></div>
-                <div class="faq-item reveal reveal-delay-2"><button class="faq-question">How is your cleaning different from regular cleaning?<span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button><div class="faq-answer"><div class="faq-answer-inner">Regular cleaners use consumer-grade products. Infinium Services uses hospital-level disinfection protocols combined with eco-friendly, Health Canada-approved formulas — the same standard used in medical facilities, but safe for your family.</div></div></div>
-                <div class="faq-item reveal"><button class="faq-question">How do I book a cleaning?<span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button><div class="faq-answer"><div class="faq-answer-inner">Easy! Fill out the contact form below, call us at (416) 726-5507, or send us a WhatsApp message. We'll do a quick assessment and get you scheduled — often within 48 hours.</div></div></div>
-                <div class="faq-item reveal reveal-delay-1"><button class="faq-question">Can I choose my own cleaning products?<span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button><div class="faq-answer"><div class="faq-answer-inner">Absolutely. If you have preferred products or specific sensitivities, let us know and we'll happily accommodate your preferences at no extra charge.</div></div></div>
-                <div class="faq-item reveal reveal-delay-2"><button class="faq-question">What cleaning supplies and equipment do you bring?<span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button><div class="faq-answer"><div class="faq-answer-inner">We bring everything: HEPA vacuums, microfiber cloths, eco-friendly cleaning solutions, disinfectants, mops, and specialty tools. You don't need to provide anything — we arrive fully equipped and ready to work.</div></div></div>
-                <div class="faq-item reveal"><button class="faq-question">Do you offer recurring cleaning packages?<span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button><div class="faq-answer"><div class="faq-answer-inner">Yes! We offer weekly, biweekly, and monthly recurring packages at discounted rates. Recurring clients also get priority booking and consistent cleaning teams so you see the same trusted faces each visit.</div></div></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA BANNER -->
-    <section class="cta-banner">
-        <div class="container">
-            <h2 class="reveal">Ready for a Cleaner, Healthier Home?</h2>
-            <p class="reveal reveal-delay-1">Get in touch today — by phone, WhatsApp, or our quick quote form. We respond within hours.</p>
-            <div class="btn-row reveal reveal-delay-2">
-                <a href="tel:+14167265507" class="btn-primary"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Call (416) 726-5507</a>
-                <a href="https://wa.me/14167265507?text=Hi%20Infinium%20Services!%20I'd%20like%20a%20free%20cleaning%20quote." class="btn-whatsapp" target="_blank"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> WhatsApp Us</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section class="section contact-section" id="contact">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-label reveal">Contact Us</div>
-                <h2 class="reveal reveal-delay-1">Get Your Free Quote</h2>
-                <p class="reveal reveal-delay-2">Tell us about your home and we'll provide a personalized cleaning estimate within hours.</p>
-            </div>
-            <div class="contact-grid">
-                <div class="contact-info reveal">
-                    <h3>Let's Make Your Home Healthier</h3>
-                    <p>Reach out by phone, WhatsApp, or fill out the form. No obligations — just transparent pricing for premium cleaning.</p>
-                    <div class="contact-detail">
-                        <div class="contact-detail-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
-                        <span><a href="tel:+14167265507">(416) 726-5507</a> — Call or Text</span>
-                    </div>
-                    <div class="contact-detail">
-                        <div class="contact-detail-icon"><svg viewBox="0 0 24 24" fill="currentColor" style="color: #25D366;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></div>
-                        <span><a href="https://wa.me/14167265507" target="_blank">WhatsApp Us</a> — Quick Response</span>
-                    </div>
-                    <div class="contact-detail">
-                        <div class="contact-detail-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
-                        <span>info@infiniumservices.ca</span>
-                    </div>
-                    <div class="contact-detail">
-                        <div class="contact-detail-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
-                        <span>Greater Toronto Area, Durham Region & Surroundings</span>
-                    </div>
-                    <div class="contact-quick-btns">
-                        <a href="tel:+14167265507" class="contact-quick-btn phone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Call Now</a>
-                        <a href="https://wa.me/14167265507?text=Hi%20Infinium%20Services!%20I'd%20like%20a%20free%20cleaning%20quote." class="contact-quick-btn wa" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> WhatsApp</a>
-                        <a href="https://www.facebook.com/profile.php?id=100068772686465" class="contact-quick-btn fb" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg> Facebook</a>
-                    </div>
-                    <div class="footer-guarantee" style="margin-top: 30px;">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
-                        <span>100% Satisfaction Guarantee — we'll re-clean within 24 hours if you're not happy.</span>
-                    </div>
-                </div>
-
-                <div class="contact-form-wrapper reveal reveal-delay-1">
-                    <h3>Request Your Free Quote</h3>
-                    <p>Fields marked with * are required.</p>
-                    <form id="quoteForm">
-                        <div class="form-grid">
-                            <div class="form-group"><label for="fullName">Full Name *</label><input type="text" id="fullName" name="fullName" placeholder="Your full name" required></div>
-                            <div class="form-group"><label for="phone">Phone / WhatsApp *</label><input type="tel" id="phone" name="phone" placeholder="(416) 000-0000" required></div>
-                            <div class="form-group"><label for="email">Email Address *</label><input type="email" id="email" name="email" placeholder="you@email.com" required></div>
-                            <div class="form-group"><label for="city">City / Area *</label><input type="text" id="city" name="city" placeholder="e.g. Toronto, Oshawa" required></div>
-                            <div class="form-group"><label for="serviceType">Service Type</label><select id="serviceType" name="serviceType"><option value="" disabled selected>Select a service</option><option value="standard">Standard Residential Cleaning</option><option value="deep">Deep Cleaning / One-Time</option><option value="move">Move-In / Move-Out</option><option value="senior">Senior & Health-Vulnerable</option></select></div>
-                            <div class="form-group"><label for="homeSize">Home Size</label><select id="homeSize" name="homeSize"><option value="" disabled selected>Select home size</option><option value="1bed">1 Bed / 1 Bath</option><option value="2bed">2 Bed / 1-2 Bath</option><option value="3bed">3 Bed / 2 Bath</option><option value="4bed">4+ Bed / 3+ Bath</option></select></div>
-                            <div class="form-group"><label for="homeType">Home Type</label><select id="homeType" name="homeType"><option value="" disabled selected>Select home type</option><option value="house">Detached House</option><option value="semi">Semi-Detached</option><option value="town">Townhouse</option><option value="condo">Condo / Apartment</option><option value="other">Other</option></select></div>
-                            <div class="form-group"><label for="prefDate">Preferred Date</label><input type="date" id="prefDate" name="prefDate"></div>
-                            <div class="form-group full"><label for="prefTime">Preferred Time</label><select id="prefTime" name="prefTime"><option value="" disabled selected>Select preferred time</option><option value="morning">Morning (8am - 12pm)</option><option value="afternoon">Afternoon (12pm - 4pm)</option><option value="evening">Evening (4pm - 7pm)</option><option value="flexible">Flexible</option></select></div>
-                            <div class="form-group full"><label for="notes">Special Requests / Notes</label><textarea id="notes" name="notes" placeholder="Any allergies, focus areas, access instructions, or special requests..."></textarea></div>
-                            <div class="form-group full"><button type="submit" class="btn-submit">Request My Quote <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg></button></div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <div class="nav-logo" style="margin-bottom: 16px;">
-                        <div class="nav-logo-icon"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
-                        <div class="nav-logo-text" style="color: #fff;">Infinium <span>Services</span></div>
-                    </div>
-                    <p>Premium residential cleaning with hospital-level care and eco-friendly products. Serving the Greater Toronto Area.</p>
-                    <div class="footer-social">
-                        <a href="https://wa.me/14167265507" aria-label="WhatsApp" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
-                        <a href="https://www.facebook.com/profile.php?id=100068772686465" aria-label="Facebook" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
-                        <a href="tel:+14167265507" aria-label="Phone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a>
-                    </div>
-                </div>
-                <div class="footer-col">
-                    <h4>Quick Links</h4>
-                    <a href="#home">Home</a>
-                    <a href="#why-medeco">Why Us</a>
-                    <a href="#services">Services</a>
-                    <a href="#prices">Prices</a>
-                    <a href="#faq">Q & A</a>
-                    <a href="#contact">Contact</a>
-                </div>
-                <div class="footer-col">
-                    <h4>Services</h4>
-                    <a href="#services">Standard Cleaning</a>
-                    <a href="#services">Deep Cleaning</a>
-                    <a href="#services">Move-In / Move-Out</a>
-                    <a href="#services">Senior Care Cleaning</a>
-                    <a href="#services">Recurring Packages</a>
-                </div>
-                <div class="footer-col">
-                    <h4>Service Areas</h4>
-                    <a href="#contact">Greater Toronto Area</a>
-                    <a href="#contact">Durham Region</a>
-                    <a href="#contact">Scarborough & Markham</a>
-                    <a href="#contact">Pickering, Ajax & Whitby</a>
-                    <div class="footer-guarantee">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
-                        <span>100% Satisfaction Guarantee</span>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">&copy; 2025 Infinium Services. All Rights Reserved. | Premium Residential Cleaning for Healthier Homes.</div>
-        </div>
-    </footer>
-
-    <!-- Floating WhatsApp button -->
-    <a href="https://wa.me/14167265507?text=Hi%20Infinium%20Services!%20I'd%20like%20a%20free%20cleaning%20quote." class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-    </a>
-
-    <a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
-    </a>
-
-    <script>
-        const nav = document.getElementById('nav');
-        const backToTop = document.getElementById('backToTop');
-        window.addEventListener('scroll', () => {
-            nav.classList.toggle('scrolled', window.scrollY > 60);
-            backToTop.classList.toggle('visible', window.scrollY > 500);
-        });
-
-        document.querySelectorAll('a[href^="#"]').forEach(a => {
-            a.addEventListener('click', function(e) {
-                e.preventDefault();
-                const t = document.querySelector(this.getAttribute('href'));
-                if (t) window.scrollTo({ top: t.getBoundingClientRect().top + window.scrollY - 80, behavior: 'smooth' });
-                document.getElementById('mobileMenu').classList.remove('open');
-                document.getElementById('hamburger').classList.remove('active');
-            });
-        });
-
-        document.getElementById('hamburger').addEventListener('click', () => {
-            document.getElementById('hamburger').classList.toggle('active');
-            document.getElementById('mobileMenu').classList.toggle('open');
-        });
-
-        const obs = new IntersectionObserver(entries => {
-            entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
-        }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
-        document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
-
-        document.querySelectorAll('.faq-question').forEach(btn => {
-            btn.addEventListener('click', () => {
-                const item = btn.parentElement;
-                const active = item.classList.contains('active');
-                document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
-                if (!active) item.classList.add('active');
-            });
-        });
-
-        document.getElementById('quoteForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const btn = this.querySelector('.btn-submit');
-            btn.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg> Quote Requested Successfully!';
-            btn.style.background = '#1D4ED8';
-            setTimeout(() => {
-                btn.innerHTML = 'Request My Quote <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg>';
-                btn.style.background = '';
-                this.reset();
-            }, 3000);
-        });
-    </script>
+<script>
+const nav=document.getElementById('nav'),btt=document.getElementById('btt');
+window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',scrollY>50);btt.classList.toggle('visible',scrollY>400)});
+document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',function(e){e.preventDefault();const t=document.querySelector(this.getAttribute('href'));if(t)window.scrollTo({top:t.getBoundingClientRect().top+scrollY-76,behavior:'smooth'});document.getElementById('mobileMenu').classList.remove('open');document.getElementById('hamburger').classList.remove('active')})});
+document.getElementById('hamburger').addEventListener('click',()=>{document.getElementById('hamburger').classList.toggle('active');document.getElementById('mobileMenu').classList.toggle('open')});
+new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('visible')}})},{threshold:.08,rootMargin:'0px 0px -50px 0px'}).observe(document.querySelectorAll('.reveal').forEach(el=>new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('visible');x.target._obs&&x.target._obs.unobserve(x.target)}})},{threshold:.08,rootMargin:'0px 0px -50px 0px'}).observe(el))||document.body);
+document.querySelectorAll('.faq-q').forEach(b=>{b.addEventListener('click',()=>{const i=b.parentElement,a=i.classList.contains('active');document.querySelectorAll('.faq-item').forEach(x=>x.classList.remove('active'));if(!a)i.classList.add('active')})});
+document.getElementById('quoteForm').addEventListener('submit',function(e){e.preventDefault();const b=this.querySelector('.btn-submit');b.textContent='Quote Requested!';b.style.background='var(--green-dark)';setTimeout(()=>{b.innerHTML='Request My Quote <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg>';b.style.background='';this.reset()},3000)});
+</script>
 </body>
 </html>
