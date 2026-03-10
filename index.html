@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Infinium Services | Premium Residential Cleaning — Toronto & GTA</title>
-    <meta name="description" content="Infinium Services provides premium eco-friendly residential cleaning for healthier homes in the Greater Toronto Area.">
+    <title>Infinium Services | Premium Cleaning & Healthcare Services — Toronto & GTA</title>
+    <meta name="description" content="Infinium Services provides premium eco-friendly residential cleaning and healthcare services for healthier homes in the Greater Toronto Area.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -38,8 +38,8 @@
         }
 
         *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-        html { scroll-behavior: smooth; font-size: 16px; -webkit-font-smoothing: antialiased; }
-        body { font-family: var(--font-body); color: var(--gray-800); background: var(--white); line-height: 1.75; overflow-x: hidden; }
+        html { scroll-behavior: smooth; font-size: 18px; -webkit-font-smoothing: antialiased; }
+        body { font-family: var(--font-body); color: var(--gray-800); background: var(--white); line-height: 1.8; overflow-x: hidden; }
         h1, h2, h3 { font-family: var(--font-display); line-height: 1.25; font-weight: 400; color: var(--navy); }
         h4, h5 { font-family: var(--font-body); font-weight: 700; color: var(--navy); }
         a { text-decoration: none; color: inherit; }
@@ -60,7 +60,7 @@
         .nav.scrolled { background: rgba(255,255,255,0.97); backdrop-filter: blur(16px); box-shadow: 0 1px 12px rgba(27,20,100,0.05); padding: 8px 0; }
         .nav-inner { display: flex; align-items: center; justify-content: space-between; }
         .nav-logo { display: flex; align-items: center; }
-        .nav-logo img { height: 64px; width: auto; }
+        .nav-logo img { height: 80px; width: auto; }
         .nav-links { display: flex; align-items: center; gap: 28px; }
         .nav-links a { font-size: 0.92rem; font-weight: 500; color: var(--gray-600); transition: color var(--transition); }
         .nav-links a:hover { color: var(--green); }
@@ -91,7 +91,7 @@
 
         .hero h1 { font-size: clamp(2.6rem, 4.5vw, 3.8rem); color: var(--navy); margin-bottom: 24px; letter-spacing: -0.01em; }
         .hero h1 em { color: var(--green); font-style: italic; }
-        .hero-text { font-size: 1.12rem; line-height: 1.85; color: var(--gray-600); margin-bottom: 36px; max-width: 500px; }
+        .hero-text { font-size: 1.2rem; line-height: 1.85; color: var(--gray-600); margin-bottom: 36px; max-width: 520px; }
         .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 16px; }
 
         .btn { display: inline-flex; align-items: center; gap: 10px; padding: 15px 32px; border-radius: 50px; font-weight: 600; font-size: 1rem; transition: all var(--transition); }
@@ -132,7 +132,16 @@
         .section-head { text-align: center; max-width: 620px; margin: 0 auto 56px; }
         .section-tag { display: inline-block; font-size: 0.82rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.14em; color: var(--green); margin-bottom: 14px; }
         .section-head h2 { font-size: clamp(1.9rem, 3.2vw, 2.6rem); margin-bottom: 16px; }
-        .section-head p { font-size: 1.06rem; color: var(--gray-600); }
+        .section-head p { font-size: 1.12rem; color: var(--gray-600); }
+
+        /* Showcase */
+        .showcase { padding: 0 0 60px; }
+        .showcase-inner { position: relative; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-lg); }
+        .showcase-inner img { width: 100%; height: 400px; object-fit: cover; display: block; }
+        .showcase-overlay { position: absolute; bottom: 0; left: 0; right: 0; padding: 32px 36px; background: linear-gradient(0deg, rgba(27,20,100,0.85) 0%, transparent 100%); }
+        .showcase-overlay h3 { font-size: 1.4rem; color: var(--white); margin-bottom: 6px; }
+        .showcase-overlay p { font-size: 1rem; color: rgba(255,255,255,0.8); }
+        @media (max-width: 768px) { .showcase-inner img { height: 260px; } .showcase-overlay { padding: 20px 22px; } .showcase-overlay h3 { font-size: 1.1rem; } }
 
         /* Why Us */
         .why-intro { text-align: center; max-width: 720px; margin: 0 auto 56px; }
@@ -149,7 +158,7 @@
         .why-point:last-child { margin-bottom: 0; }
         .why-check { flex-shrink: 0; width: 24px; height: 24px; background: var(--green); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-top: 2px; }
         .why-check svg { width: 13px; height: 13px; color: var(--white); }
-        .why-point p { font-size: 0.92rem; color: var(--gray-600); line-height: 1.7; }
+        .why-point p { font-size: 1rem; color: var(--gray-600); line-height: 1.75; }
 
         /* Services */
         .svc-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
@@ -162,7 +171,7 @@
         .svc-ico svg { width: 26px; height: 26px; color: var(--green); transition: color var(--transition); }
         .svc:hover .svc-ico svg { color: var(--white); }
         .svc h3 { font-size: 1.2rem; margin-bottom: 10px; }
-        .svc p { font-size: 0.94rem; color: var(--gray-600); line-height: 1.7; margin-bottom: 18px; }
+        .svc p { font-size: 1rem; color: var(--gray-600); line-height: 1.75; margin-bottom: 18px; }
         .svc-link { display: inline-flex; align-items: center; gap: 6px; font-weight: 600; font-size: 0.88rem; color: var(--green); transition: gap var(--transition); }
         .svc:hover .svc-link { gap: 12px; }
         .svc-link svg { width: 16px; height: 16px; }
@@ -206,7 +215,7 @@
         .faq-item.active .faq-plus svg { color: var(--white); }
         .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
         .faq-item.active .faq-a { max-height: 300px; }
-        .faq-a-inner { padding: 0 24px 20px; font-size: 0.94rem; color: var(--gray-600); line-height: 1.8; }
+        .faq-a-inner { padding: 0 24px 20px; font-size: 1rem; color: var(--gray-600); line-height: 1.85; }
 
         /* CTA banner */
         .cta { background: var(--navy); padding: 64px 0; text-align: center; position: relative; overflow: hidden; }
@@ -259,7 +268,7 @@
         /* Footer */
         .footer { background: #0B0A2E; color: rgba(255,255,255,0.6); padding: 60px 0 0; }
         .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 36px; padding-bottom: 44px; border-bottom: 1px solid rgba(255,255,255,0.06); }
-        .footer-brand img { height: 48px; margin-bottom: 16px; filter: brightness(10); }
+        .footer-brand img { height: 56px; margin-bottom: 16px; filter: brightness(10); }
         .footer-brand p { font-size: 0.88rem; line-height: 1.7; margin-bottom: 20px; max-width: 260px; }
         .footer-social { display: flex; gap: 10px; }
         .footer-social a { width: 40px; height: 40px; background: rgba(255,255,255,0.05); border-radius: 10px; display: flex; align-items: center; justify-content: center; transition: all var(--transition); }
@@ -356,7 +365,7 @@
         <div class="hero-content">
             <div class="hero-badge reveal"><span class="hero-badge-dot"></span>Trusted by 500+ GTA Families</div>
             <h1 class="reveal reveal-d1">Premium <em>Eco-Friendly</em> Cleaning for Your Home</h1>
-            <p class="hero-text reveal reveal-d2">Your family deserves a spotless, healthy home — without harsh chemicals. Infinium Services combines hospital-grade disinfection with 100% eco-friendly products for a cleaner you can trust.</p>
+            <p class="hero-text reveal reveal-d2">Your family deserves a spotless, healthy home — without harsh chemicals. Infinium Services combines hospital-grade disinfection with 100% eco-friendly products for professional cleaning and healthcare you can trust.</p>
             <div class="hero-btns reveal reveal-d3">
                 <a href="#contact" class="btn btn-green">Get a Free Quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></a>
                 <a href="https://wa.me/14167265507?text=Hi%20Infinium%20Services!%20I'd%20like%20a%20free%20cleaning%20quote." class="btn btn-wa" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>WhatsApp Us</a>
@@ -366,7 +375,7 @@
             </div>
         </div>
         <div class="hero-visual reveal reveal-d2">
-            <div class="hero-img"><img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&q=80" alt="Professional cleaning service" loading="eager"></div>
+            <div class="hero-img"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80" alt="Beautifully cleaned modern home interior" loading="eager"></div>
             <div class="hero-float hero-float-1">
                 <div class="hero-float-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
                 <div><strong>10+ Years</strong><span>Trusted Experience</span></div>
@@ -385,6 +394,18 @@
         <div class="trust-card reveal reveal-d1"><div class="trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c6.23-5.89 8-8.5 8-12a8 8 0 1 0-16 0c0 3.5 1.77 6.11 8 12z"/><circle cx="12" cy="10" r="3"/></svg></div><span class="trust-text">100% Eco-Friendly</span></div>
         <div class="trust-card reveal reveal-d2"><div class="trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><span class="trust-text">Background-Checked Staff</span></div>
         <div class="trust-card reveal reveal-d3"><div class="trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><path d="M8.21 13.89L7 23l5-3 5 3-1.21-9.12"/></svg></div><span class="trust-text">Satisfaction Guaranteed</span></div>
+    </div>
+</section>
+
+<section class="showcase">
+    <div class="container">
+        <div class="showcase-inner reveal">
+            <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80" alt="Spotless, freshly cleaned modern home" loading="lazy">
+            <div class="showcase-overlay">
+                <h3>This Is What a MedEco Clean Looks Like</h3>
+                <p>Hospital-grade hygiene meets eco-friendly care — every surface spotless, every room fresh.</p>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -517,7 +538,7 @@
 <footer class="footer">
     <div class="container">
         <div class="footer-grid">
-            <div class="footer-brand"><img src="logo.png" alt="Infinium Services"><p>Premium eco-friendly residential cleaning. Serving the Greater Toronto Area with professional care.</p>
+            <div class="footer-brand"><img src="logo.png" alt="Infinium Services"><p>Premium eco-friendly cleaning and healthcare services. Serving the Greater Toronto Area with professional care.</p>
                 <div class="footer-social">
                     <a href="https://wa.me/14167265507" target="_blank" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
                     <a href="https://www.facebook.com/profile.php?id=100068772686465" target="_blank" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
@@ -528,7 +549,7 @@
             <div class="footer-col"><h4>Services</h4><a href="#services">Standard Cleaning</a><a href="#services">Deep Cleaning</a><a href="#services">Move-In / Move-Out</a><a href="#services">Senior Care</a><a href="#services">Recurring Packages</a></div>
             <div class="footer-col"><h4>Service Areas</h4><a href="#contact">Greater Toronto Area</a><a href="#contact">Durham Region</a><a href="#contact">Scarborough & Markham</a><a href="#contact">Pickering, Ajax & Whitby</a></div>
         </div>
-        <div class="footer-bottom">&copy; 2025 Infinium Services. All Rights Reserved.</div>
+        <div class="footer-bottom">&copy; 2026 Infinium Services. All Rights Reserved.</div>
     </div>
 </footer>
 
